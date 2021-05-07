@@ -1,0 +1,2533 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix bot:   <https://w3id.org/bot#> .
+@prefix ifc:   <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix beo:   <https://pi.pauwel.be/voc/buildingelement#> .
+@prefix lbd:   <https://linkebuildingdata.org/LBD#> .
+@prefix props: <http://lbd.arch.rwth-aachen.de/props#> .
+@prefix geo:   <http://www.opengis.net/ont/geosparql#> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix smls:  <https://w3id.org/def/smls-owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix inst:  <https://ldc.de/> .
+@prefix mep:   <http://pi.pauwel.be/voc/distributionelement#> .
+@prefix furn:  <http://pi.pauwel.be/voc/furniture#> .
+
+inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f220
+        a                             beo:Beam , bot:Element ;
+        props:batid_attribute_simple  "208949" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OrWItJ6zAwBNp0OUxK$8W" ;
+        props:nameIfcRoot_attribute_simple
+                "M_W-Wide Flange:W410X60:W410X60:208949" ;
+        props:objectTypeIfcObject_attribute_simple
+                "M_W-Wide Flange:W410X60:208814" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.26661287835240066 -17.6120000015497 2.692999994754987), (6.448499771118161 -17.433999998450258 3.1000000000001897))" ] ;
+        owl:sameAs                    inst:IfcBeam_36770 .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d68
+        a                    bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dlXre" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Bathroom 2" ;
+        props:nameIfcRoot_attribute_simple
+                "A204" ;
+        geo:hasGeometry      [ geo:asWKT  "MULTIPOINT Z((4.769999980926514 -10.949999809265137 3.113000000268417), (6.294000148773193 -7.845384120941162 5.699999904632764))" ] ;
+        owl:sameAs           inst:IfcSpace_1165 ;
+        bot:adjacentElement  inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b9655 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5330 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e65338fa , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533926 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5275 , inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597b0a , inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b700f , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98514e .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc858
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "147686" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlSXO" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:147686" ;
+        props:objectTypeIfcObject_attribute_simple
+                "2800mm x 2410mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "2.409999999999996"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "2.8"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((1.325000000000009 -0.41700000000000004 3.20000000000021), (4.124999952316284 -4.291534461131619E-9 5.610000085830885))" ] ;
+        owl:sameAs                    inst:IfcWindow_7135 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f37a , inst:wall_9808fd7f-dc48-478e-9217-628e833d568d .
+
+inst:storey_7b7032cc-b822-417b-9aea-6429f95f770e
+        a                    bot:Storey ;
+        props:elevationIfcBuildingStorey_attribute_simple
+                "6.000000000000207"^^xsd:double ;
+        props:globalIdIfcRoot_attribute_simple
+                "1xS3BCk291UvhgP2dvNtSE" ;
+        props:nameIfcRoot_attribute_simple
+                "Roof" ;
+        owl:sameAs           inst:IfcBuildingStorey_51 ;
+        bot:containsElement  inst:wall_2da40d62-4698-436c-a2c3-95c49bb70d41 , inst:window_4ec82fcb-9118-4408-a3ae-37969a37298d , inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef , inst:wall_2da40d62-4698-436c-a2c3-95c49bb70c3c , inst:wall_2da40d62-4698-436c-a2c3-95c49bb70ca4 , inst:window_4ec82fcb-9118-4408-a3ae-37969a372f02 , inst:wall_2da40d62-4698-436c-a2c3-95c49bb70cfa .
+
+inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f37b
+        a                             beo:Beam , bot:Element ;
+        props:batid_attribute_simple  "209262" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OrWItJ6zAwBNp0OUxK$Dx" ;
+        props:nameIfcRoot_attribute_simple
+                "M_W-Wide Flange:W410X60:W410X60:209262" ;
+        props:objectTypeIfcObject_attribute_simple
+                "M_W-Wide Flange:W410X60:208814" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.444387118875248 -4.398279928630386 5.592999994754999), (8.62238712197469 -0.2770002121386872 6.0000000000002025))" ] ;
+        owl:sameAs                    inst:IfcBeam_37464 ;
+        lbd:containsInBoundingBox     inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444cde , inst:wall_9808fd7f-dc48-478e-9217-628e833d568d , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444b93 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da
+        a                    bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dl_3Q" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Foyer" ;
+        props:nameIfcRoot_attribute_simple
+                "B101" ;
+        geo:hasGeometry      [ geo:asWKT  "MULTIPOINT Z((0.4169999999999994 -9.725000000000009 0.01900000000000001), (2.6000000877380365 -0.4170003890991296 3.100000089645386))" ] ;
+        owl:sameAs           inst:IfcSpace_2372 ;
+        bot:adjacentElement  inst:wall_9808fd7f-dc48-478e-9217-628e833d7938 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:wall_9808fd7f-dc48-478e-9217-628e833d7af9 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:wall_9808fd7f-dc48-478e-9217-628e833d7df1 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7be7 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc24f , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb448 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d574f
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "143856" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FLTF" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):143856" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.41699999999999904 -6.249999998986723 2.612), (2.505999986648559 -6.126000001013281 6.000000011444092))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5591 ;
+        lbd:containsInBoundingBox     inst:member_5f1efada-bcd8-41b6-aff4-ad3fb24b7679 , inst:railing_81be7c96-ce56-447e-9d93-021422f83119 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:stairflight_06e324b6-962d-4317-b253-85e1df8c71f8 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:railing_81be7c96-ce56-447e-9d93-021422f830c5 , inst:member_d776d4d4-ad53-498c-9675-a4d357bd81ef ;
+        bot:hasSubElement             inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc3d4 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d7d42
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "138237" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FNr2" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:138237" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((-3.738403595576756E-7 -17.799999997854233 0.0), (8.382999999999972 -17.383000002145767 3.0999999046325684))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4002 ;
+        lbd:containsInBoundingBox     inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53ebc8 , inst:door_7606d7eb-508f-40ce-a522-9b526ddc728b , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f220 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb2de ;
+        bot:hasSubElement             inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb2de , inst:door_7606d7eb-508f-40ce-a522-9b526ddc728b .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d7df1
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "138062" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FNtn" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:138062" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.0 -0.4169999978542329 0.0), (8.800000190734863 -2.145767313832536E-9 3.0999999046325684))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_3758 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb1c2 , inst:door_7606d7eb-508f-40ce-a522-9b526ddc7201 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe323 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f379 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f378 ;
+        bot:hasSubElement             inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb1c2 , inst:door_7606d7eb-508f-40ce-a522-9b526ddc7201 .
+
+inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc223
+        a                             beo:Door , bot:Element ;
+        props:batid_attribute_simple  "150173" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlS8Z" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:0762 x 2032mm:0762 x 2032mm:150173" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0762 x 2032mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.032"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.7619999999999989"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.2009999960660975 -10.128999997556233 0.0), (6.375000000372533 -9.215000000476861 2.1080000400543213))" ] ;
+        owl:sameAs                    inst:IfcDoor_8011 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:wall_9808fd7f-dc48-478e-9217-628e833d471d , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 .
+
+inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f31b
+        a                             beo:Beam , bot:Element ;
+        props:batid_attribute_simple  "209166" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OrWItJ6zAwBNp0OUxK$CR" ;
+        props:nameIfcRoot_attribute_simple
+                "M_W-Wide Flange:W410X60:W410X60:209166" ;
+        props:objectTypeIfcObject_attribute_simple
+                "M_W-Wide Flange:W410X60:208814" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.428954328744266 -17.61776686452339 5.592999994754999), (8.528954233376833 -17.439766861423948 6.0000000000002025))" ] ;
+        owl:sameAs                    inst:IfcBeam_37073 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d7d12
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "138157" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FNqI" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:138157" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.383000002145767 -17.799999420166042 0.0), (8.799999997854233 -0.4170000000000293 3.0999999046325684))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_3958 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb57b , inst:member_aee7272c-8ef2-4af0-b3f4-1509a4c67b98 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb41a , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0dc , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe323 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a31 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f ;
+        bot:hasSubElement             inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb57b , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb41a .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc056
+        a                             beo:Window , bot:Element ;
+        props:batid_attribute_simple  "149736" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlS1M" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Casement:819mm x 759mm:819mm x 759mm:149736" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.7590000000000007"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.8190000000000001"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((7.563999994277911 -17.799999995708465 4.025500000000202), (8.382999999999955 -17.383 4.7845000033380565))" ] ;
+        owl:sameAs                    inst:IfcWindow_7844 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d4938
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "143239" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FKau" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:143239" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:128555" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.124999994039536 -17.382999603271497 3.100000000000196), (4.675000005960465 -0.4170000000000139 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWall_5348 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5512 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98516e , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b72d9 , inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597fa3 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9
+        a                          bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dl_39" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Bedroom 2" ;
+        props:nameIfcRoot_attribute_simple
+                "B203" ;
+        geo:hasGeometry            [ geo:asWKT  "MULTIPOINT Z((0.4169999957084656 -6.665999889373779 3.1189999993892483), (4.125 -0.4169999957084656 5.699999904632764))" ] ;
+        owl:sameAs                 inst:IfcSpace_3044 ;
+        lbd:containsInBoundingBox  inst:wall_9808fd7f-dc48-478e-9217-628e833d574f , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:railing_81be7c96-ce56-447e-9d93-021422f83119 , inst:railing_81be7c96-ce56-447e-9d93-021422f830c5 ;
+        bot:adjacentElement        inst:covering_e586c31c-dfb6-463e-aee7-a2dffc9850b2 , inst:wall_9808fd7f-dc48-478e-9217-628e833d574f , inst:window_6f010293-ddb7-4fe4-8ffd-c144d84448e3 , inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef , inst:wall_9808fd7f-dc48-478e-9217-628e833d55b5 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcaa4 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc858 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7300 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc3d4 , inst:wall_9808fd7f-dc48-478e-9217-628e833d568d , inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b72d9
+        a                             beo:Slab-FLOOR , bot:Element , beo:Slab ;
+        props:batid_attribute_simple  "169308" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUtBP" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Wood:169308" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Wood" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.674999999999972 -17.383 3.1000000000001955), (8.382999944686862 -11.118000133514403 3.1189999993892483))" ] ;
+        owl:sameAs                    inst:IfcSlab_20895 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc370 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5239 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533ae9 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e655 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d7f
+        a                          bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dlXr$" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Kitchen" ;
+        props:nameIfcRoot_attribute_simple
+                "A103" ;
+        geo:hasGeometry            [ geo:asWKT  "MULTIPOINT Z((0.4169999957084656 -12.600000381469727 0.013000000268220901), (6.22599983215332 -10.369999885559082 2.5999999046325684))" ] ;
+        owl:sameAs                 inst:IfcSpace_231 ;
+        lbd:containsInBoundingBox  inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d42 ;
+        bot:adjacentElement        inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:wall_9808fd7f-dc48-478e-9217-628e833d471d , inst:wall_9808fd7f-dc48-478e-9217-628e833d7af9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d44b8 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ca4 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb6d5 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d386 .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0
+        a                          bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dl_3G" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Hallway" ;
+        props:nameIfcRoot_attribute_simple
+                "B201" ;
+        geo:hasGeometry            [ geo:asWKT  "MULTIPOINT Z((0.4169999999999994 -11.55 3.100000000000196), (2.3820000333786004 -6.249999809265137 5.699999904632764))" ] ;
+        owl:sameAs                 inst:IfcSpace_2659 ;
+        lbd:containsInBoundingBox  inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533a28 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:railing_81be7c96-ce56-447e-9d93-021422f83119 , inst:railing_81be7c96-ce56-447e-9d93-021422f830c5 ;
+        bot:adjacentElement        inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7236 , inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b96c4 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985166 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc3d4 , inst:wall_9808fd7f-dc48-478e-9217-628e833d574f , inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b8873 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e .
+
+inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651
+        a                             bot:Element , beo:Railing-NOTDEFINED , beo:Railing ;
+        props:batid_attribute_simple  "151166" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0wkEuT1wr1kOyafLY4v_PH" ;
+        props:nameIfcRoot_attribute_simple
+                "Railing:1100mm Guard Rail:151166" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Railing:1100mm Guard Rail" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((7.323599999981013 -11.825000308227526 0.2484535119725608), (7.413599997503695 -8.019999933242797 4.199999932781442))" ] ;
+        owl:sameAs                    inst:IfcRailing_12125 ;
+        lbd:containsInBoundingBox     inst:member_f26519b1-a697-4f79-9628-ca1443a95258 , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 .
+
+inst:wall_2da40d62-4698-436c-a2c3-95c49bb70ca4
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "185064" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0jf0rYHfX3RAB3bSIRjmoa" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:185064" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((-3.738403595576756E-7 -17.799999997854233 6.0), (8.382999999999972 -17.383000002145767 6.609000027179718))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_22685 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5611 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f2f4 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f31b .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a31
+        a                             beo:Slab-FLOOR , bot:Element , beo:Slab ;
+        props:batid_attribute_simple  "171444" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUten" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile:171444" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.574000000000002 -7.429999999999978 0.0), (8.38300001525879 -5.199999980926501 0.013000000268220901))" ] ;
+        owl:sameAs                    inst:IfcSlab_21593 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0dc .
+
+inst:building_7b7032cc-b822-417b-9aea-642906a29bd4
+        a              bot:Building ;
+        props:globalIdIfcRoot_attribute_simple
+                "1xS3BCk291UvhgP2a6eflK" ;
+        owl:sameAs     inst:IfcBuilding_36 ;
+        bot:hasStorey  inst:storey_7b7032cc-b822-417b-9aea-6429f95d6512 , inst:storey_7b7032cc-b822-417b-9aea-6429f95d6693 , inst:storey_7b7032cc-b822-417b-9aea-6429f95f6ab3 , inst:storey_7b7032cc-b822-417b-9aea-6429f95f770e .
+
+inst:slab_9808fd7f-dc48-478e-9217-628e833d410f
+        a                             beo:Slab , bot:Element , beo:Slab-FLOOR ;
+        props:batid_attribute_simple  "141232" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FK4F" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:127mm Slab on Grade:141232" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:127mm Slab on Grade" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.41699999999998505 -9.725000000000014 -0.127), (8.383000080108628 -0.41700038909913495 4.053115842950206E-9))" ] ;
+        owl:sameAs                    inst:IfcSlab_5116 ;
+        lbd:containsInBoundingBox     inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7be7 , inst:member_f26519b1-a697-4f79-9628-ca1443a95258 , inst:stairflight_ca457005-aa0d-4679-92c1-5067d702c9f3 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7b78 , inst:member_aee7272c-8ef2-4af0-b3f4-1509a4c67b98 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d8c1 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a31 .
+
+inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb41a
+        a                             beo:Door , bot:Element ;
+        props:batid_attribute_simple  "146596" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlRGQ" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146596" ;
+        props:objectTypeIfcObject_attribute_simple
+                "1250mm x 2010mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.009999999999999"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "1.25"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.357999999627438 -16.878999975204465 0.0), (8.825000001668897 -15.47700000244379 2.0859999656677246))" ] ;
+        owl:sameAs                    inst:IfcDoor_6597 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75
+        a                    bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dlXrr" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Foyer" ;
+        props:nameIfcRoot_attribute_simple
+                "A101" ;
+        geo:hasGeometry      [ geo:asWKT  "MULTIPOINT Z((6.2 -17.383 0.01900000000000001), (8.383000087738036 -8.07500038909912 3.100000089645386))" ] ;
+        owl:sameAs           inst:IfcSpace_640 ;
+        bot:adjacentElement  inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:wall_9808fd7f-dc48-478e-9217-628e833d471d , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb41a , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7d42 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7d12 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc223 , inst:wall_9808fd7f-dc48-478e-9217-628e833d441c , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d795d
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "139234" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FNbT" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139234" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:128555" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.181999786376942 -8.075000005960465 0.0), (8.382999999999988 -7.58200000524521 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4244 ;
+        lbd:containsInBoundingBox     inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98501e , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98514e
+        a                             beo:Covering , bot:Element , beo:Covering-CEILING ;
+        props:batid_attribute_simple  "187659" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc55E" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187659" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.675000190734863 -10.949999809265137 5.699999904632764), (6.294000148773193 -6.789999961853027 5.7570000648500494))" ] ;
+        owl:sameAs                    inst:IfcCovering_24114 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5393 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d68 , inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433df , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e65338fa .
+
+inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444d36
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "180864" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1l0GAJtRTFv8$zmKJOH4qs" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:819mm x 759mm:819mm x 759mm:180864" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.7589999999999986"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.8190000000000001"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.291532407219023E-9 -14.48299999999996 3.2000000000002093), (0.416999999999998 -13.663999994277923 3.959000003338057))" ] ;
+        owl:sameAs                    inst:IfcWindow_22019 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca .
+
+inst:wall_2c391822-07f8-4a22-86a8-a1e57412dcef
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "190140" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0iEHWY1$XA8eQeeULq4jpl" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):190140" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.5740000295639067 -7.553999998986694 0.0), (4.030000000000003 -7.430000001013252 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_24601 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7b78 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d8c1 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 .
+
+inst:wall_2da40d62-4698-436c-a2c3-95c49bb70c3c
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "184944" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0jf0rYHfX3RAB3bSIRjmmy" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:184944" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.0 -0.4169999978542329 6.0), (8.800000190734863 -2.145767313832536E-9 6.609000027179718))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_22595 ;
+        lbd:containsInBoundingBox     inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f37b , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f37a , inst:wall_9808fd7f-dc48-478e-9217-628e833d568d , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d4004
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "140987" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FK04" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Foundation - Concrete (435mm):140987" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Foundation - Concrete (435mm):207146" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.417 -10.217500001192093 -1.25), (4.6175000114440925 -9.782499998807907 0.0))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5008 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd177 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46d1 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd0a3 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd097 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4065 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb2de
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "146016" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlRBU" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:4835mm x 2420mm:4835mm x 2420mm:146016" ;
+        props:objectTypeIfcObject_attribute_simple
+                "4835mm x 2420mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "2.419999999999998"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "4.834999999999997"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.41699996185302446 -17.79999999570846 0.10000000000001259), (5.251999999999987 -17.382999999999996 2.520000076293946))" ] ;
+        owl:sameAs                    inst:IfcWindow_6476 .
+
+inst:stairflight_06e324b6-962d-4317-b253-85e1df8c71f8
+        a                             beo:StairFlight , bot:Element ;
+        props:batid_attribute_simple  "198878" ;
+        props:globalIdIfcRoot_attribute_simple
+                "06uoIsbYr35x9JXU7VZ77u" ;
+        props:nameIfcRoot_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread:198878:1" ;
+        props:numberOfRiserIfcStairFlight_attribute_simple
+                16 ;
+        props:numberOfTreadsIfcStairFlight_attribute_simple
+                15 ;
+        props:objectTypeIfcObject_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread" ;
+        props:riserHeightIfcStairFlight_attribute_simple
+                "0.6356627296588328"^^xsd:double ;
+        props:treadLengthIfcStairFlight_attribute_simple
+                "0.8202099737532809"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.46700000762939453 -9.7475004196167 0.0), (1.3813999891281128 -5.975072860717773 3.049999952316284))" ] ;
+        owl:sameAs                    inst:IfcStairFlight_31941 ;
+        lbd:containsInBoundingBox     inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe323
+        a                          bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dl_CZ" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Living Room" ;
+        props:nameIfcRoot_attribute_simple
+                "B102" ;
+        geo:hasGeometry            [ geo:asWKT  "MULTIPOINT Z((2.5999999046325684 -5.199999809265137 0.01899999938905239), (8.383000373840332 -0.4169999957084656 2.5999999046325684))" ] ;
+        owl:sameAs                 inst:IfcSpace_1782 ;
+        lbd:containsInBoundingBox  inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da ;
+        bot:adjacentElement        inst:door_7606d7eb-508f-40ce-a522-9b526ddc7201 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb57b , inst:wall_9808fd7f-dc48-478e-9217-628e833d7be7 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7df1 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb1c2 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:wall_9808fd7f-dc48-478e-9217-628e833d7d12 .
+
+inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533e77
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "203347" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1aj$VJZFn2TxepZUBcKpvt" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):203347" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.5059999513625932 -10.094051177497311 3.100000000000196), (4.029999999999983 -9.97005117952387 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_35077 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98515e , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7236 ;
+        bot:hasSubElement             inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533fec .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcc4c
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "148722" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlSnC" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:819mm x 759mm:819mm x 759mm:148722" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.7589999999999986"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.8189999999999995"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4170000000000095 -0.4170000000000002 4.851000000000206), (1.2360000057220462 -4.291534627665072E-9 5.610000003338054))" ] ;
+        owl:sameAs                    inst:IfcWindow_7688 ;
+        lbd:containsInBoundingBox     inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f37a , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985144
+        a                             beo:Covering , bot:Element , beo:Covering-CEILING ;
+        props:batid_attribute_simple  "187649" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc554" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187649" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.675000190734863 -6.665999889373779 5.699999904632764), (8.383000373840332 -0.4169999957084656 5.7570000648500494))" ] ;
+        owl:sameAs                    inst:IfcCovering_24056 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:wall_9808fd7f-dc48-478e-9217-628e833d568d , inst:wall_9808fd7f-dc48-478e-9217-628e833d5275 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985156 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c .
+
+inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e65338fa
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "203998" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1aj$VJZFn2TxepZUBcKpZw" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):203998" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.769999999999988 -7.845384234058244 3.100000000000196), (6.294000048637378 -7.721384236084802 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_35235 ;
+        lbd:containsInBoundingBox     inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533926 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d68 ;
+        bot:hasSubElement             inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533926 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d4257
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "140520" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FK9N" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Foundation - Concrete (417mm):140520" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Foundation - Concrete (417mm):128676" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.38300000214577 -17.799999420166042 -1.25), (8.799999997854236 -0.41700000000002374 0.0))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4771 ;
+        lbd:containsInBoundingBox     inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb41a , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:member_aee7272c-8ef2-4af0-b3f4-1509a4c67b98 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a31 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7d12 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd167 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985156
+        a                             beo:Covering , bot:Element , beo:Covering-CEILING ;
+        props:batid_attribute_simple  "187667" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc55M" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187667" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.418000221252441 -11.550000190734863 5.699999904632764), (8.383000373840332 -6.25 5.7570000648500494))" ] ;
+        owl:sameAs                    inst:IfcCovering_24172 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985170 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5239 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d5275
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "144586" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FL9r" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):144586" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.294000001013279 -11.55 3.100000000000196), (6.417999998986721 -6.126000213623048 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5895 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b72d9 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985170 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b9655 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e65338fa , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc370 , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533926 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433df , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98514e , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d68 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 ;
+        bot:hasSubElement             inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b9655 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d5330
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "144783" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FLCm" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Plumbing (152mm Stud):144783" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Plumbing (152mm Stud):128382" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.675000041961671 -11.134000000178824 3.100000000000196), (6.294000000000001 -10.949999999821197 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_6027 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b72d9 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985170 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdccc1
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "148607" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlSp1" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Casement:819mm x 759mm:819mm x 759mm:148607" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.7590000000000007"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.819"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.41700000000001597 -0.4170000000000015 4.025500000000201), (1.2360000057220608 -4.291535904421551E-9 4.784500003338056))" ] ;
+        owl:sameAs                    inst:IfcWindow_7584 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d568d .
+
+inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444a9a
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "181548" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1l0GAJtRTFv8$zmKJOH4gQ" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Casement:819mm x 759mm:819mm x 759mm:181548" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.7590000000000007"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.8190000000000001"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.382999999999994 -4.136000005722088 4.025500000000202), (8.79999999570846 -3.317000000000043 4.7845000033380565))" ] ;
+        owl:sameAs                    inst:IfcWindow_22227 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 .
+
+inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f2f4
+        a                             beo:Beam , bot:Element ;
+        props:batid_attribute_simple  "209121" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OrWItJ6zAwBNp0OUxK$Bq" ;
+        props:nameIfcRoot_attribute_simple
+                "M_W-Wide Flange:W410X60:W410X60:209121" ;
+        props:objectTypeIfcObject_attribute_simple
+                "M_W-Wide Flange:W410X60:208814" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.17761287802532805 -17.52299978786133 5.592999994754999), (0.3556128811247696 -13.401720071369624 6.0000000000002025))" ] ;
+        owl:sameAs                    inst:IfcBeam_36943 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "143960" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FLJd" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):143960" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999666213897 -11.673999998986721 3.100000000000196), (2.381999999999991 -11.550000001013279 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5680 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca ;
+        bot:hasSubElement             inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b8873 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d43b5
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "140554" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FKEr" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Foundation - Concrete (417mm):140554" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Foundation - Concrete (417mm):128676" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((-3.738403560049619E-7 -17.799999997854243 -1.25), (8.382999999999976 -17.383000002145778 0.0))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4821 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d7d42 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd167 , inst:door_7606d7eb-508f-40ce-a522-9b526ddc728b , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd16f .
+
+inst:wall_2da40d62-4698-436c-a2c3-95c49bb70d41
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "185101" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0jf0rYHfX3RAB3bSIRjmr1" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:185101" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.1457662036095115E-9 -17.382999999999967 6.0), (0.4169999978542318 -0.4170003967284863 6.609000027179718))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_22730 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 , inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f2f4 .
+
+inst:stairflight_ca457005-aa0d-4679-92c1-5067d702c9f3
+        a                             beo:StairFlight , bot:Element ;
+        props:batid_attribute_simple  "151086" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3AHN05gWr6UPB1K6VN0idp" ;
+        props:nameIfcRoot_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1" ;
+        props:numberOfRiserIfcStairFlight_attribute_simple
+                16 ;
+        props:numberOfTreadsIfcStairFlight_attribute_simple
+                15 ;
+        props:objectTypeIfcObject_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread" ;
+        props:riserHeightIfcStairFlight_attribute_simple
+                "0.6356627296588328"^^xsd:double ;
+        props:treadLengthIfcStairFlight_attribute_simple
+                "0.8202099737532809"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((7.418600082397461 -11.82492733001709 0.0), (8.333000183105469 -8.052499771118164 3.049999952316284))" ] ;
+        owl:sameAs                    inst:IfcStairFlight_8915 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 .
+
+inst:footing_2e3c415a-d885-4964-a589-bb0941bdd167
+        a                             beo:Footing , beo:Footing-STRIP_FOOTING , bot:Element ;
+        props:batid_attribute_simple  "186596" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0kF45Qs8L9PAM9kmb1lT5d" ;
+        props:nameIfcRoot_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300:186596" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.141500473022461 -18.041500091552734 -1.550000011920929), (9.041500091552734 0.24150000512599945 -1.25))" ] ;
+        owl:sameAs                    inst:IfcFooting_23218 ;
+        lbd:containsInBoundingBox     inst:footing_2e3c415a-d885-4964-a589-bb0941bdd16f , inst:wall_9808fd7f-dc48-478e-9217-628e833d40ce .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d5239
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "144518" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FL8v" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):144518" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.294000013351422 -11.673999998986721 2.612000000000196), (8.382999999999981 -11.550000001013279 6.000000011444287))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5850 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:member_f26519b1-a697-4f79-9628-ca1443a95258 , inst:stairflight_ca457005-aa0d-4679-92c1-5067d702c9f3 , inst:member_aee7272c-8ef2-4af0-b3f4-1509a4c67b98 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e655 ;
+        bot:hasSubElement             inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc370 .
+
+inst:site_7b7032cc-b822-417b-9aea-642906a29bd7
+        a                geo:Feature , bot:Site ;
+        props:globalIdIfcRoot_attribute_simple
+                "1xS3BCk291UvhgP2a6eflN" ;
+        props:nameIfcRoot_attribute_simple
+                "Default" ;
+        props:refElevationIfcSite_attribute_simple
+                "-0."^^xsd:double ;
+        geo:hasGeometry  <urn:bot:geom:pt:7b7032cc-b822-417b-9aea-642906a29bd7> ;
+        owl:sameAs       inst:IfcSite_37645 ;
+        bot:hasBuilding  inst:building_7b7032cc-b822-417b-9aea-642906a29bd4 .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcaa4
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "147994" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlSga" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:819mm x 759mm:819mm x 759mm:147994" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.758999999999998"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.8189999999999998"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4170000000000096 -0.4170000000000002 3.2000000000002142), (1.2360000057220462 -4.291534627665072E-9 3.959000003338062))" ] ;
+        owl:sameAs                    inst:IfcWindow_7352 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 .
+
+inst:window_6f010293-ddb7-4fe4-8ffd-c144d844491c
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "181930" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1l0GAJtRTFv8$zmKJOH4aS" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:750mm x 2200mm:750mm x 2200mm:181930" ;
+        props:objectTypeIfcObject_attribute_simple
+                "750mm x 2200mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "2.199999999999997"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.7499999999999985"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.382999999999983 -12.524 3.200000000000209), (8.799999995708449 -11.774000000000008 5.400000047683912))" ] ;
+        owl:sameAs                    inst:IfcWindow_22331 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160
+        a                             beo:Slab-FLOOR , beo:Slab , bot:Element ;
+        props:batid_attribute_simple  "169701" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUt5W" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Wood:169701" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Wood" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.294000000000013 -11.67400000000001 3.1000000000001955), (8.382999986648572 -6.126000141143809 3.1189999993892483))" ] ;
+        owl:sameAs                    inst:IfcSlab_21084 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5239 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b72d9 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e655 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533ae9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d68 , inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433df , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc370 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 .
+
+inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b97df
+        a                             bot:Element , beo:Door ;
+        props:batid_attribute_simple  "159834" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUvVV" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:0864 x 2032mm:0864 x 2032mm:159834" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0864 x 2032mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.032"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.8639999999999996"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.402000002443799 -6.2750000003725335 3.100000000000196), (7.417999997615823 -6.100999996066098 5.208000040054517))" ] ;
+        owl:sameAs                    inst:IfcDoor_15952 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c , inst:wall_9808fd7f-dc48-478e-9217-628e833d5275 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d7be7
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "138584" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FNld" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):138584" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.4760000010132788 -3.999999944686898 0.0), (2.599999998986721 -0.41700000000000775 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4090 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe323 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d4065
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "141018" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FK1b" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Foundation - Concrete (435mm):141018" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Foundation - Concrete (435mm):207146" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.182499998807901 -9.782500000000015 -1.25), (4.617500001192087 -8.01750001430513 -0.12699997425079346))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5057 ;
+        lbd:containsInBoundingBox     inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd08b , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd097 .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ca4
+        a                             beo:Slab-FLOOR , beo:Slab , bot:Element ;
+        props:batid_attribute_simple  "170785" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUtoa" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile:170785" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999999999951 -12.599999999999989 0.0), (6.226000015258784 -10.369999980926504 0.013000000268220901))" ] ;
+        owl:sameAs                    inst:IfcSlab_21384 ;
+        lbd:containsInBoundingBox     inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d7f , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d386 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98500b
+        a                             beo:Covering-CEILING , bot:Element , beo:Covering ;
+        props:batid_attribute_simple  "187470" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc50B" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187470" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.5739998817443848 -9.725000381469727 2.5999999046325684), (4.125 -7.677000045776367 2.6570000648498535))" ] ;
+        owl:sameAs                    inst:IfcCovering_23754 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748
+        a                             bot:Element , beo:Covering-CEILING , beo:Covering ;
+        props:batid_attribute_simple  "187149" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc5T8" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187149" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999957084656 -9.725000381469727 2.5999999046325684), (8.383000373840332 -0.4169999957084656 2.6570000648498535))" ] ;
+        owl:sameAs                    inst:IfcCovering_23601 ;
+        lbd:containsInBoundingBox     inst:wall_2c391822-07f8-4a22-86a8-a1e57412d8c1 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0dc , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98501e , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98500b , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:member_f26519b1-a697-4f79-9628-ca1443a95258 , inst:stairflight_ca457005-aa0d-4679-92c1-5067d702c9f3 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7be7 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e655 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:member_aee7272c-8ef2-4af0-b3f4-1509a4c67b98 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe323 .
+
+inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f378
+        a                             beo:Beam , bot:Element ;
+        props:batid_attribute_simple  "209261" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OrWItJ6zAwBNp0OUxK$Du" ;
+        props:nameIfcRoot_attribute_simple
+                "M_W-Wide Flange:W410X60:W410X60:209261" ;
+        props:objectTypeIfcObject_attribute_simple
+                "M_W-Wide Flange:W410X60:208814" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.3515002288818696 -0.366000001549764 2.692999994754987), (8.53338712164763 -0.18799999845032245 3.1000000000001897))" ] ;
+        owl:sameAs                    inst:IfcBeam_37334 .
+
+inst:stair_3ab8ee1d-07ad-41b9-8f24-a55884e7e601
+        a                             bot:Element , beo:Stair ;
+        props:batid_attribute_simple  "151086" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0wkEuT1wr1kOyafLY4v_O1" ;
+        props:nameIfcRoot_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread:151086" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread" ;
+        owl:sameAs                    inst:IfcStair_8966 ;
+        bot:hasSubElement             inst:stairflight_ca457005-aa0d-4679-92c1-5067d702c9f3 , inst:member_aee7272c-8ef2-4af0-b3f4-1509a4c67b98 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e655 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651 , inst:member_f26519b1-a697-4f79-9628-ca1443a95258 .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca
+        a                          bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dl_3A" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Bedroom 1" ;
+        props:nameIfcRoot_attribute_simple
+                "B202" ;
+        geo:hasGeometry            [ geo:asWKT  "MULTIPOINT Z((0.4169999957084656 -17.382999420166016 3.1189999993892483), (4.125 -11.133999824523926 5.699999904632764))" ] ;
+        owl:sameAs                 inst:IfcSpace_3277 ;
+        lbd:containsInBoundingBox  inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 ;
+        bot:adjacentElement        inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98516e , inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:wall_9808fd7f-dc48-478e-9217-628e833d5512 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b8873 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5611 , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e , inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444fe8 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444d36 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b720f , inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "139347" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FKRi" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139347" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:128555" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999999999976 -10.217999994754791 0.0), (4.618000213623045 -9.724999994039536 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4354 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d44b8
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "139783" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FKIu" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):139783" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.769999999999999 -10.369999998986751 0.0), (6.225999970436095 -10.246000001013309 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4508 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d7f , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98501e , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ca4 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d4385
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "140602" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FKE5" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Foundation - Concrete (417mm):140602" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Foundation - Concrete (417mm):128676" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.1457678134328972E-9 -17.38299999999999 -1.25), (0.41699999785423336 -0.4170003967285041 0.0))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4871 ;
+        lbd:containsInBoundingBox     inst:footing_2e3c415a-d885-4964-a589-bb0941bdd16f , inst:wall_9808fd7f-dc48-478e-9217-628e833d7af9 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb448 .
+
+inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444cb4
+        a                             beo:Window , bot:Element ;
+        props:batid_attribute_simple  "180994" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1l0GAJtRTFv8$zmKJOH4oq" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Casement:819mm x 759mm:819mm x 759mm:180994" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.7590000000000007"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.8190000000000001"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.291533683975501E-9 -14.482999999999953 4.025500000000202), (0.41699999999999926 -13.663999994277908 4.7845000033380565))" ] ;
+        owl:sameAs                    inst:IfcWindow_22071 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca .
+
+inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597fa3
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "194166" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0dxE1Sy6nDqfpDb5vIMN_Z" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):194166" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):187795" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.0300000024437725 -11.01 3.100000000000196), (4.181999997556192 -6.85000015258789 5.695000028610425))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_31354 ;
+        lbd:containsInBoundingBox     inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433cc , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0cc .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031
+        a                             beo:Covering-CEILING , bot:Element , beo:Covering ;
+        props:batid_attribute_simple  "187508" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc50n" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187508" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999957084656 -17.382999420166016 2.5999999046325684), (8.383000373840332 -8.074999809265137 2.6570000648498535))" ] ;
+        owl:sameAs                    inst:IfcCovering_23920 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d7f , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98501e , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d386 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d42 .
+
+inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc370
+        a                             beo:Door , bot:Element ;
+        props:batid_attribute_simple  "150478" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlSDm" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:0864 x 2032mm:0864 x 2032mm:150478" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0864 x 2032mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.032"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.8639999999999996"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.381300002384171 -11.699000003933904 3.1000000000001964), (7.397299997556194 -11.524999999627468 5.208000040054518))" ] ;
+        owl:sameAs                    inst:IfcDoor_8331 ;
+        lbd:containsInBoundingBox     inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5239 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533ae9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 .
+
+inst:storey_7b7032cc-b822-417b-9aea-6429f95f6ab3
+        a                    bot:Storey ;
+        props:elevationIfcBuildingStorey_attribute_simple
+                "-1.25"^^xsd:double ;
+        props:globalIdIfcRoot_attribute_simple
+                "1xS3BCk291UvhgP2dvNsgp" ;
+        props:nameIfcRoot_attribute_simple
+                "T/FDN" ;
+        owl:sameAs           inst:IfcBuildingStorey_47 ;
+        bot:containsElement  inst:footing_2e3c415a-d885-4964-a589-bb0941bdd16f , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd097 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4385 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4200 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd177 , inst:wall_9808fd7f-dc48-478e-9217-628e833d40ce , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd08b , inst:wall_9808fd7f-dc48-478e-9217-628e833d4004 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd17f , inst:wall_9808fd7f-dc48-478e-9217-628e833d4257 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd167 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4065 , inst:wall_9808fd7f-dc48-478e-9217-628e833d43b5 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd0a3 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d5246
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "144633" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FL96" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):144633" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.418000000000008 -6.249999998986723 3.100000000000196), (8.38300003337861 -6.126000001013281 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5939 ;
+        lbd:containsInBoundingBox     inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b97df , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985144 ;
+        bot:hasSubElement             inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b97df .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d5512
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "144301" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FLKI" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):144301" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.506000041961653 -11.13399999898672 3.100000000000196), (4.124999999999983 -11.010000001013278 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5806 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b720f , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca , inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433cc .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0dc
+        a                          bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dl_3S" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Kitchen" ;
+        props:nameIfcRoot_attribute_simple
+                "B103" ;
+        geo:hasGeometry            [ geo:asWKT  "MULTIPOINT Z((2.5739998817443848 -7.429999828338623 0.013000000268220901), (8.383000373840332 -5.199999809265137 2.5999999046325684))" ] ;
+        owl:sameAs                 inst:IfcSpace_1944 ;
+        lbd:containsInBoundingBox  inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe323 ;
+        bot:adjacentElement        inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb57b , inst:wall_9808fd7f-dc48-478e-9217-628e833d7938 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d8c1 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7d12 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412dcef , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a31 .
+
+inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "190774" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0iEHWY1$XA8eQeeULq4jDb" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):190774" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):187795" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.618000002443793 -10.370000076293936 0.0), (4.769999997556212 -8.07499999999999 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_24646 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98501e , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d7f , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 .
+
+inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444b93
+        a                             beo:Window , bot:Element ;
+        props:batid_attribute_simple  "181285" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1l0GAJtRTFv8$zmKJOH4kJ" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:819mm x 759mm:819mm x 759mm:181285" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.758999999999998"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.8189999999999995"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.382999999999996 -4.136000005722073 4.85100000000021), (8.799999995708461 -3.317000000000036 5.610000003338057))" ] ;
+        owl:sameAs                    inst:IfcWindow_22175 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 .
+
+inst:wall_2c391822-07f8-4a22-86a8-a1e57412d8c1
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "189074" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0iEHWY1$XA8eQeeULq4jZ1" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):189074" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):187795" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.029999835968006 -7.5819999975562125 0.0), (8.382999999999988 -7.430000002443793 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_24476 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985170
+        a                             bot:Element , beo:Covering , beo:Covering-CEILING ;
+        props:batid_attribute_simple  "187701" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc55m" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187701" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.675000190734863 -17.382999420166016 5.699999904632764), (8.383000373840332 -11.133999824523926 5.7570000648500494))" ] ;
+        owl:sameAs                    inst:IfcCovering_24424 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5239 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "143478" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FLR9" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:143478" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.383000002145767 -17.799999237060547 3.100000000000196), (8.799999997854233 0.0 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5447 ;
+        lbd:containsInBoundingBox     inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f31b , inst:wall_9808fd7f-dc48-478e-9217-628e833d568d , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985170 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985156 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444cde , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444b93 ;
+        bot:hasSubElement             inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444cde , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444b93 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444af9 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d844491c , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444a9a .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcfa0
+        a                             beo:Window , bot:Element ;
+        props:batid_attribute_simple  "149278" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlS_W" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:149278" ;
+        props:objectTypeIfcObject_attribute_simple
+                "2800mm x 2410mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "2.409999999999996"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "2.8"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.675000047683689 -17.79999999570847 3.2000000000002142), (7.474999999999964 -17.383000000000003 5.61000008583089))" ] ;
+        owl:sameAs                    inst:IfcWindow_7740 ;
+        lbd:containsInBoundingBox     inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f31b .
+
+inst:member_aee7272c-8ef2-4af0-b3f4-1509a4c67b98
+        a                             beo:Member , bot:Element ;
+        props:batid_attribute_simple  "151086" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2kvoSiZl9AyBFq5GcandkO" ;
+        props:nameIfcRoot_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread:151086:1" ;
+        props:objectTypeIfcObject_attribute_simple
+                "stringer" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.333000183105469 -11.824999809265137 0.0), (8.383000373840332 -8.074999809265137 3.0999999046325684))" ] ;
+        owl:sameAs                    inst:IfcMember_8947 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:stairflight_ca457005-aa0d-4679-92c1-5067d702c9f3 .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98516e
+        a                             beo:Covering , beo:Covering-CEILING , bot:Element ;
+        props:batid_attribute_simple  "187691" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc55k" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187691" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999957084656 -17.382999420166016 5.699999904632764), (4.125 -11.133999824523926 5.7570000648500494))" ] ;
+        owl:sameAs                    inst:IfcCovering_24356 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5512 , inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65
+        a                          bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dlXrb" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Bedroom 2" ;
+        props:nameIfcRoot_attribute_simple
+                "A203" ;
+        geo:hasGeometry            [ geo:asWKT  "MULTIPOINT Z((4.675000190734863 -17.382999420166016 3.1189999993892483), (8.383000373840332 -11.133999824523926 5.699999904632764))" ] ;
+        owl:sameAs                 inst:IfcSpace_1341 ;
+        lbd:containsInBoundingBox  inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e655 ;
+        bot:adjacentElement        inst:wall_9808fd7f-dc48-478e-9217-628e833d5275 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d844491c , inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef , inst:wall_9808fd7f-dc48-478e-9217-628e833d5239 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985170 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b72d9 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcfa0 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5611 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc09f , inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc370 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5330 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d55b5
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "144138" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FLMr" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Plumbing (152mm Stud):144138" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Plumbing (152mm Stud):128382" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.5059999999999985 -6.850000000178817 3.100000000000196), (4.1249999580383285 -6.665999999821189 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5724 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0cc , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7300 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98515e .
+
+inst:window_6f010293-ddb7-4fe4-8ffd-c144d84448e3
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "182101" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1l0GAJtRTFv8$zmKJOH4ZZ" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:750mm x 2200mm:750mm x 2200mm:182101" ;
+        props:objectTypeIfcObject_attribute_simple
+                "750mm x 2200mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "2.199999999999997"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.7499999999999996"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.291533017841687E-9 -6.025999999999988 3.200000000000209), (0.4169999999999986 -5.275999999999998 5.400000047683912))" ] ;
+        owl:sameAs                    inst:IfcWindow_22383 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb57b
+        a                             beo:Window , bot:Element ;
+        props:batid_attribute_simple  "146885" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlRLx" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:750mm x 2200mm:750mm x 2200mm:146885" ;
+        props:objectTypeIfcObject_attribute_simple
+                "750mm x 2200mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "2.199999999999996"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.7499999999999996"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.382999999999994 -5.945000000000001 0.10000000000001259), (8.79999999570846 -5.195000000000011 2.3000000476837164))" ] ;
+        owl:sameAs                    inst:IfcWindow_6866 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0dc , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe323 .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc09f
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "149537" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlS2V" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:819mm x 759mm:819mm x 759mm:149537" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.758999999999998"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.8190000000000001"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((7.563999994277928 -17.799999995708465 3.2000000000002142), (8.382999999999965 -17.383 3.959000003338062))" ] ;
+        owl:sameAs                    inst:IfcWindow_7792 .
+
+inst:wall_2c391822-07f8-4a22-86a8-a1e57412df9e
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "189901" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0iEHWY1$XA8eQeeULq4j_U" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):189901" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):187795" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.030000002443789 -9.725000000000014 0.0), (4.1819999975562085 -7.582000112533583 3.0999999046325684))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_24558 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98500b , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985003 , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7300
+        a                             beo:Slab , bot:Element , beo:Slab-FLOOR ;
+        props:batid_attribute_simple  "169093" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUtC0" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Wood:169093" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Wood" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999999999989 -6.666000000000008 3.1000000000001955), (4.124999944686889 -0.4169999275207603 3.1189999993892483))" ] ;
+        owl:sameAs                    inst:IfcSlab_20731 ;
+        lbd:containsInBoundingBox     inst:railing_81be7c96-ce56-447e-9d93-021422f83119 , inst:railing_81be7c96-ce56-447e-9d93-021422f830c5 , inst:wall_9808fd7f-dc48-478e-9217-628e833d574f , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533a28 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7236 .
+
+inst:footing_2e3c415a-d885-4964-a589-bb0941bdd0a3
+        a                             beo:Footing-STRIP_FOOTING , beo:Footing , bot:Element ;
+        props:batid_attribute_simple  "186656" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0kF45Qs8L9PAM9kmb1lT2Z" ;
+        props:nameIfcRoot_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300:186656" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.6585000157356262 -10.449999809265137 -1.550000011920929), (3.950000047683716 -9.550000190734863 -1.25))" ] ;
+        owl:sameAs                    inst:IfcFooting_23492 .
+
+inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef
+        a                             beo:Roof , bot:Element ;
+        props:batid_attribute_simple  "184483" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0jf0rYHfX3RAB3bSIRjmxl" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Roof:Live Roof over Wood Joist Flat Roof:184483" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Roof:Live Roof over Wood Joist Flat Roof" ;
+        owl:sameAs                    inst:IfcRoof_22410 ;
+        bot:hasSubElement             inst:window_4ec82fcb-9118-4408-a3ae-37969a372f02 , inst:window_4ec82fcb-9118-4408-a3ae-37969a37298d , inst:slab_09a873b2-0e03-4eb2-b9f1-da270188dc92 .
+
+<urn:bot:geom:pt:7b7032cc-b822-417b-9aea-642906a29bd7>
+        geo:asWKT  "POINT (-71.335194702 42.2130344238)"^^geo:wktLiteral .
+
+inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd
+        a                             beo:Slab-FLOOR , bot:Element , beo:Slab ;
+        props:batid_attribute_simple  "143106" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FKcz" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:127mm Slab on Grade:143106" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:127mm Slab on Grade" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999999999994 -17.383 -0.127), (8.383000080108642 -8.07500038909912 4.053115842950206E-9))" ] ;
+        owl:sameAs                    inst:IfcSlab_5216 ;
+        lbd:containsInBoundingBox     inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc223 , inst:stairflight_ca457005-aa0d-4679-92c1-5067d702c9f3 , inst:member_aee7272c-8ef2-4af0-b3f4-1509a4c67b98 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7b78 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ca4 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:wall_9808fd7f-dc48-478e-9217-628e833d441c , inst:wall_2c391822-07f8-4a22-86a8-a1e57412df9e , inst:wall_9808fd7f-dc48-478e-9217-628e833d46d1 , inst:wall_9808fd7f-dc48-478e-9217-628e833d471d , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d386 , inst:member_f26519b1-a697-4f79-9628-ca1443a95258 .
+
+inst:footing_2e3c415a-d885-4964-a589-bb0941bdd17f
+        a                             beo:Footing , beo:Footing-STRIP_FOOTING , bot:Element ;
+        props:batid_attribute_simple  "186620" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0kF45Qs8L9PAM9kmb1lT5$" ;
+        props:nameIfcRoot_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300:186620" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.6585000157356262 -0.6585000157356262 -1.550000011920929), (8.141500473022461 0.24150000512599945 -1.25))" ] ;
+        owl:sameAs                    inst:IfcFooting_23376 ;
+        lbd:containsInBoundingBox     inst:footing_2e3c415a-d885-4964-a589-bb0941bdd167 .
+
+inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f379
+        a                             beo:Beam , bot:Element ;
+        props:batid_attribute_simple  "209260" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OrWItJ6zAwBNp0OUxK$Dv" ;
+        props:nameIfcRoot_attribute_simple
+                "M_W-Wide Flange:W310X60:W310X60:209260" ;
+        props:objectTypeIfcObject_attribute_simple
+                "M_W-Wide Flange:W310X60:208816" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.298500002920636 -7.799999999999992 2.7969999969007544), (4.501499997079381 -0.3787000656127848 3.1000000000001897))" ] ;
+        owl:sameAs                    inst:IfcBeam_37203 .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99
+        a                             beo:Slab-FLOOR , beo:Slab , bot:Element ;
+        props:batid_attribute_simple  "171292" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUtgP" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Wood:171292" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Wood" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999999999994 -9.725000000000009 0.0), (8.383000080108642 -0.4170003890991296 0.01899999938905239))" ] ;
+        owl:sameAs                    inst:IfcSlab_21545 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0dc , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe323 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7be7 .
+
+inst:window_4ec82fcb-9118-4408-a3ae-37969a37298d
+        a                             beo:Window , bot:Element ;
+        props:batid_attribute_simple  "185337" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1Eo2$BaHX42AEkDvQQDocD" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Skylight:1180 x 1170mm:1180 x 1170mm:185337" ;
+        props:objectTypeIfcObject_attribute_simple
+                "1180 x 1170mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.6348000000000008"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "1.172537682966587"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.7897311812256604 -11.277268825450763 6.457000181579589), (1.9622688358639508 -10.052731154838428 6.634799883270263))" ] ;
+        owl:sameAs                    inst:IfcWindow_23094 .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98501e
+        a                             beo:Covering-CEILING , bot:Element , beo:Covering ;
+        props:batid_attribute_simple  "187483" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc50U" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187483" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.675000190734863 -10.246000289916992 2.5999999046325684), (6.22599983215332 -8.074999809265137 2.6570000648498535))" ] ;
+        owl:sameAs                    inst:IfcCovering_23812 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d46d1
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "139374" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FKRH" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:139374" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Party Wall - CMU Residential Unit Dimising Wall:128555" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.124999994039536 -10.0 0.0), (4.675000005960465 -7.799999952316284 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4420 ;
+        lbd:containsInBoundingBox     inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:wall_2c391822-07f8-4a22-86a8-a1e57412df9e , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985003 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98500b , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 .
+
+inst:railing_81be7c96-ce56-447e-9d93-021422f830c5
+        a                             beo:Railing-NOTDEFINED , beo:Railing , bot:Element ;
+        props:batid_attribute_simple  "198972" ;
+        props:globalIdIfcRoot_attribute_simple
+                "21ldoMpbP4VfsJ0XGY_335" ;
+        props:nameIfcRoot_attribute_simple
+                "Railing:1100mm Guard Rail:198972" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Railing:1100mm Guard Rail" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((1.3863999686653212 -9.779999551354312 0.2484535119725598), (1.4763999975037247 -5.974999946765937 4.1999999327814415))" ] ;
+        owl:sameAs                    inst:IfcRailing_35041 ;
+        lbd:containsInBoundingBox     inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533a28 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:member_5f1efada-bcd8-41b6-aff4-ad3fb24b7679 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d4200
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "140479" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FK80" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Foundation - Concrete (417mm):140479" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Foundation - Concrete (417mm):128676" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.0 -0.4169999978542309 -1.25), (8.800000190734863 -2.145765315431092E-9 0.0))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4598 ;
+        lbd:containsInBoundingBox     inst:footing_2e3c415a-d885-4964-a589-bb0941bdd177 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7df1 , inst:door_7606d7eb-508f-40ce-a522-9b526ddc7201 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd167 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd17f .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d42
+        a                    bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dlXr2" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Living Room" ;
+        props:nameIfcRoot_attribute_simple
+                "A102" ;
+        geo:hasGeometry      [ geo:asWKT  "MULTIPOINT Z((0.4169999957084656 -17.382999420166016 0.01899999938905239), (6.199999809265137 -12.600000381469727 2.5999999046325684))" ] ;
+        owl:sameAs           inst:IfcSpace_67 ;
+        bot:adjacentElement  inst:wall_9808fd7f-dc48-478e-9217-628e833d441c , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb2de , inst:wall_9808fd7f-dc48-478e-9217-628e833d7af9 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:wall_9808fd7f-dc48-478e-9217-628e833d7d42 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb6d5 , inst:door_7606d7eb-508f-40ce-a522-9b526ddc728b , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 .
+
+inst:stair_81be7c96-ce56-447e-9d93-021422f83127
+        a                             beo:Stair , bot:Element ;
+        props:batid_attribute_simple  "198878" ;
+        props:globalIdIfcRoot_attribute_simple
+                "21ldoMpbP4VfsJ0XGY_34d" ;
+        props:nameIfcRoot_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread:198878" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread" ;
+        owl:sameAs                    inst:IfcStair_31994 ;
+        bot:hasSubElement             inst:member_d776d4d4-ad53-498c-9675-a4d357bd81ef , inst:railing_81be7c96-ce56-447e-9d93-021422f830c5 , inst:stairflight_06e324b6-962d-4317-b253-85e1df8c71f8 , inst:member_5f1efada-bcd8-41b6-aff4-ad3fb24b7679 , inst:railing_81be7c96-ce56-447e-9d93-021422f83119 .
+
+inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b9655
+        a                             bot:Element , beo:Door ;
+        props:batid_attribute_simple  "160208" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUvPL" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:0864 x 2032mm:0864 x 2032mm:160208" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0864 x 2032mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.032"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.8639999999999996"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.268999996066099 -8.88538423262774 3.100000000000196), (6.4430000003725345 -7.869384237455716 5.208000040054517))" ] ;
+        owl:sameAs                    inst:IfcDoor_16054 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d68 , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533926 .
+
+inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433cc
+        a                    bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "2gRXFgjRn2HPE$YoDLX3FC" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Utility" ;
+        props:nameIfcRoot_attribute_simple
+                "B205" ;
+        geo:hasGeometry      [ geo:asWKT  "MULTIPOINT Z((2.50600004196167 -11.010000228881836 3.113000000268417), (4.03000020980835 -10.094051361083984 5.699999904632764))" ] ;
+        owl:sameAs           inst:IfcSpace_3621 ;
+        bot:adjacentElement  inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98515e , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533fec , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e , inst:wall_9808fd7f-dc48-478e-9217-628e833d5512 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533e77 , inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597fa3 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b70a9 , inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7b78
+        a                             beo:Slab , bot:Element , beo:Slab-FLOOR ;
+        props:batid_attribute_simple  "171261" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUtju" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile:171261" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.5739999999999976 -9.725000000000014 0.0), (4.029999970436093 -7.553999996185317 0.013000000268220901))" ] ;
+        owl:sameAs                    inst:IfcSlab_21480 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d8c1 .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb1c2
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "145788" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlR72" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:4835mm x 2420mm:4835mm x 2420mm:145788" ;
+        props:objectTypeIfcObject_attribute_simple
+                "4835mm x 2420mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "2.419999999999998"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "4.834999999999996"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((3.5480000000000116 -0.4170000000000038 0.10000000000001259), (8.383000038146974 -4.291538235889902E-9 2.520000076293946))" ] ;
+        owl:sameAs                    inst:IfcWindow_6371 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe323 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d471d
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "139682" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FKST" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):139682" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.226000001013278 -10.99500000000004 0.0), (6.34999999898672 -8.074999923706095 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4463 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ca4 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 ;
+        bot:hasSubElement             inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc223 .
+
+inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb448
+        a                             bot:Element , beo:Door ;
+        props:batid_attribute_simple  "146678" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlRH8" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:1250mm x 2010mm:1250mm x 2010mm:146678" ;
+        props:objectTypeIfcObject_attribute_simple
+                "1250mm x 2010mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.009999999999999"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "1.25"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((-0.025000001668923466 -2.32299999755622 0.0), (0.4420000003725356 -0.9210000247955428 2.0859999656677246))" ] ;
+        owl:sameAs                    inst:IfcDoor_6702 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b700f
+        a                             beo:Slab-FLOOR , beo:Slab , bot:Element ;
+        props:batid_attribute_simple  "169866" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUt0F" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile:169866" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.769999999999986 -10.95000000000001 3.1000000000001955), (6.294000048637376 -6.790000152587901 3.113000000268417))" ] ;
+        owl:sameAs                    inst:IfcSlab_21271 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5275 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b9655 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533926 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5330 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e65338fa , inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433df , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d68 .
+
+inst:wall_2da40d62-4698-436c-a2c3-95c49bb70cfa
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "185014" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0jf0rYHfX3RAB3bSIRjmpw" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:185014" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.383000002145767 -17.799999420166042 6.0), (8.799999997854233 -0.4170000000000293 6.609000027179718))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_22640 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5611 , inst:slab_09a873b2-0e03-4eb2-b9f1-da270188dc92 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f31b , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f37b , inst:wall_9808fd7f-dc48-478e-9217-628e833d5246 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 .
+
+inst:member_5f1efada-bcd8-41b6-aff4-ad3fb24b7679
+        a                             beo:Member , bot:Element ;
+        props:batid_attribute_simple  "198878" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1V7lhQlDX1jg$qhJ_oItPv" ;
+        props:nameIfcRoot_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread:198878:1" ;
+        props:objectTypeIfcObject_attribute_simple
+                "stringer" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((1.3813999891281128 -9.725000381469727 2.220446049250313E-16), (1.431399941444397 -5.974999904632568 3.0999999046325684))" ] ;
+        owl:sameAs                    inst:IfcMember_31974 ;
+        lbd:containsInBoundingBox     inst:stairflight_06e324b6-962d-4317-b253-85e1df8c71f8 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66
+        a                    bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dlXrc" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Bedroom 1" ;
+        props:nameIfcRoot_attribute_simple
+                "A202" ;
+        geo:hasGeometry      [ geo:asWKT  "MULTIPOINT Z((4.675000190734863 -6.665999889373779 3.1189999993892483), (8.383000373840332 -0.4169999957084656 5.699999904632764))" ] ;
+        owl:sameAs           inst:IfcSpace_1574 ;
+        bot:adjacentElement  inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7361 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5246 , inst:wall_9808fd7f-dc48-478e-9217-628e833d568d , inst:wall_9808fd7f-dc48-478e-9217-628e833d5275 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5393 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 , inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444af9 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985144 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444cde , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b97df .
+
+inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b8873
+        a                             beo:Door , bot:Element ;
+        props:batid_attribute_simple  "159734" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUuXp" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:0864 x 2032mm:0864 x 2032mm:159734" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0864 x 2032mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.032"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.8639999999999996"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((1.3420000023841778 -11.699000003933904 3.100000000000196), (2.3579999975562016 -11.524999999627468 5.208000040054517))" ] ;
+        owl:sameAs                    inst:IfcDoor_15901 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7361
+        a                             beo:Slab , bot:Element , beo:Slab-FLOOR ;
+        props:batid_attribute_simple  "169188" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUtDX" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Wood:169188" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Wood" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.675 -6.666000000000003 3.1000000000001955), (8.38299994468689 -0.416999927520755 3.1189999993892483))" ] ;
+        owl:sameAs                    inst:IfcSlab_20840 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5246 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b97df , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c , inst:wall_9808fd7f-dc48-478e-9217-628e833d5275 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 , inst:wall_9808fd7f-dc48-478e-9217-628e833d568d .
+
+inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444cde
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "181096" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1l0GAJtRTFv8$zmKJOH4pU" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:181096" ;
+        props:objectTypeIfcObject_attribute_simple
+                "2800mm x 2410mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "2.409999999999996"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "2.8"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.383000000000004 -3.2169999523163106 3.20000000000021), (8.79999999570847 -0.4170000000000356 5.610000085830885))" ] ;
+        owl:sameAs                    inst:IfcWindow_22123 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78
+        a                          bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dlXru" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Bathroom 1" ;
+        props:nameIfcRoot_attribute_simple
+                "A104" ;
+        geo:hasGeometry            [ geo:asWKT  "MULTIPOINT Z((4.769999980926514 -10.246000289916992 0.013000000268220901), (6.22599983215332 -8.074999809265137 2.5999999046325684))" ] ;
+        owl:sameAs                 inst:IfcSpace_394 ;
+        lbd:containsInBoundingBox  inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 ;
+        bot:adjacentElement        inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7b5b , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:wall_9808fd7f-dc48-478e-9217-628e833d471d , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98501e , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc223 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:wall_9808fd7f-dc48-478e-9217-628e833d44b8 .
+
+inst:storey_7b7032cc-b822-417b-9aea-6429f95d6512
+        a                    bot:Storey ;
+        props:elevationIfcBuildingStorey_attribute_simple
+                "0."^^xsd:double ;
+        props:globalIdIfcRoot_attribute_simple
+                "1xS3BCk291UvhgP2dvNMKI" ;
+        props:nameIfcRoot_attribute_simple
+                "Level 1" ;
+        owl:sameAs           inst:IfcBuildingStorey_39 ;
+        bot:containsElement  inst:stair_3ab8ee1d-07ad-41b9-8f24-a55884e7e601 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533ae9 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7be7 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46d1 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc223 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb2de , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb57b , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d386 , inst:stairflight_ca457005-aa0d-4679-92c1-5067d702c9f3 , inst:railing_81be7c96-ce56-447e-9d93-021422f83119 , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:door_7606d7eb-508f-40ce-a522-9b526ddc728b , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d8c1 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f220 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7af9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d44b8 , inst:stairflight_06e324b6-962d-4317-b253-85e1df8c71f8 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb6d5 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e655 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53ebc8 , inst:member_f26519b1-a697-4f79-9628-ca1443a95258 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f379 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7d42 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:member_aee7272c-8ef2-4af0-b3f4-1509a4c67b98 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb448 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:member_d776d4d4-ad53-498c-9675-a4d357bd81ef , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc24f , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ca4 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98500b , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7b5b , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985003 , inst:wall_9808fd7f-dc48-478e-9217-628e833d441c , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb41a , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f378 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb1c2 , inst:member_5f1efada-bcd8-41b6-aff4-ad3fb24b7679 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7b78 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7938 , inst:door_7606d7eb-508f-40ce-a522-9b526ddc7201 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a31 , inst:wall_9808fd7f-dc48-478e-9217-628e833d471d , inst:wall_9808fd7f-dc48-478e-9217-628e833d7d12 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412dcef , inst:wall_9808fd7f-dc48-478e-9217-628e833d574f , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533a28 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:wall_9808fd7f-dc48-478e-9217-628e833d5239 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:railing_81be7c96-ce56-447e-9d93-021422f830c5 , inst:stair_81be7c96-ce56-447e-9d93-021422f83127 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412df9e , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98501e , inst:wall_9808fd7f-dc48-478e-9217-628e833d7df1 ;
+        bot:hasSpace         inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe323 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0dc , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d7f , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d42 .
+
+inst:member_d776d4d4-ad53-498c-9675-a4d357bd81ef
+        a                             bot:Element , beo:Member ;
+        props:batid_attribute_simple  "198878" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3NTjJKhLD9Z9PrfDDNlO7l" ;
+        props:nameIfcRoot_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread:198878:2" ;
+        props:objectTypeIfcObject_attribute_simple
+                "stringer" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999957084656 -9.725000381469727 2.220446049250313E-16), (0.46700000762939453 -5.974999904632568 3.0999999046325684))" ] ;
+        owl:sameAs                    inst:IfcMember_31993 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:stairflight_06e324b6-962d-4317-b253-85e1df8c71f8 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:wall_9808fd7f-dc48-478e-9217-628e833d7af9 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec .
+
+inst:member_f26519b1-a697-4f79-9628-ca1443a95258
+        a                             bot:Element , beo:Member ;
+        props:batid_attribute_simple  "151086" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3oPHcnffTFUPOeoXH3gL9O" ;
+        props:nameIfcRoot_attribute_simple
+                "Stair:Residential - 200mm Max Riser 250mm Tread:151086:2" ;
+        props:objectTypeIfcObject_attribute_simple
+                "stringer" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((7.368599891662598 -11.824999809265137 0.0), (7.418600082397461 -8.074999809265137 3.0999999046325684))" ] ;
+        owl:sameAs                    inst:IfcMember_8965 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:stairflight_ca457005-aa0d-4679-92c1-5067d702c9f3 , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d .
+
+inst:door_7606d7eb-508f-40ce-a522-9b526ddc7201
+        a                             beo:Door , bot:Element ;
+        props:batid_attribute_simple  "171853" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1s1jVhK8z0pgKYcr9jt781" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Glass 1:0813 x 2420mm:0813 x 2420mm:171853" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0813 x 2420mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.42"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.8129999999999998"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.5589691674866044 -0.44200000037251724 0.0), (3.5239691636123025 0.02500000166894184 2.496000051498413))" ] ;
+        owl:sameAs                    inst:IfcDoor_21756 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe323 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:wall_9808fd7f-dc48-478e-9217-628e833d7be7 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 .
+
+inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc24f
+        a                             beo:Door , bot:Element ;
+        props:batid_attribute_simple  "150257" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlS9F" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:0762 x 2032mm:0762 x 2032mm:150257" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0762 x 2032mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.032"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.762"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.4249999996274694 -8.586999999523144 0.0), (2.599000003933905 -7.673000002443772 2.1080000400543213))" ] ;
+        owl:sameAs                    inst:IfcDoor_8114 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7b78 .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb6d5
+        a                             beo:Window , bot:Element ;
+        props:batid_attribute_simple  "147051" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlRRL" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:750mm x 2200mm:750mm x 2200mm:147051" ;
+        props:objectTypeIfcObject_attribute_simple
+                "750mm x 2200mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "2.199999999999996"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.7499999999999985"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.291532629263628E-9 -12.604999999999992 0.10000000000001259), (0.4169999999999982 -11.855 2.3000000476837164))" ] ;
+        owl:sameAs                    inst:IfcWindow_6970 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d7f , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d42 .
+
+inst:footing_2e3c415a-d885-4964-a589-bb0941bdd097
+        a                             beo:Footing-STRIP_FOOTING , bot:Element , beo:Footing ;
+        props:batid_attribute_simple  "186644" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0kF45Qs8L9PAM9kmb1lT2N" ;
+        props:nameIfcRoot_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300:186644" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((3.950000047683716 -10.449999809265137 -1.550000011920929), (4.849999904632568 -8.25 -1.25))" ] ;
+        owl:sameAs                    inst:IfcFooting_23454 ;
+        lbd:containsInBoundingBox     inst:footing_2e3c415a-d885-4964-a589-bb0941bdd0a3 .
+
+inst:railing_81be7c96-ce56-447e-9d93-021422f83119
+        a                             beo:Railing-NOTDEFINED , bot:Element , beo:Railing ;
+        props:batid_attribute_simple  "198880" ;
+        props:globalIdIfcRoot_attribute_simple
+                "21ldoMpbP4VfsJ0XGY_34P" ;
+        props:nameIfcRoot_attribute_simple
+                "Railing:900mm Handrail Only:198880" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Railing:900mm Handrail Only" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4219999999810431 -9.72500000152588 1.0431436677672035), (0.4620000004839573 -5.97499976158141 3.999999913524284))" ] ;
+        owl:sameAs                    inst:IfcRailing_32224 ;
+        lbd:containsInBoundingBox     inst:member_d776d4d4-ad53-498c-9675-a4d357bd81ef , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d441c
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "139939" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FKGS" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):139939" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.20000000101328 -17.38299994468689 0.0), (6.323999998986722 -13.8 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4553 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9
+        a                          bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dl_3P" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Bathroom 1" ;
+        props:nameIfcRoot_attribute_simple
+                "B104" ;
+        geo:hasGeometry            [ geo:asWKT  "MULTIPOINT Z((2.5739998817443848 -9.725000381469727 0.013000000268220901), (4.03000020980835 -7.553999900817871 2.7950000762939453))" ] ;
+        owl:sameAs                 inst:IfcSpace_2105 ;
+        lbd:containsInBoundingBox  inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da ;
+        bot:adjacentElement        inst:wall_2c391822-07f8-4a22-86a8-a1e57412df9e , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98500b , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985003 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412dcef , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc24f , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7b78 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:wall_9808fd7f-dc48-478e-9217-628e833d7938 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0cc
+        a                    bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dl_3C" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Bathroom 2" ;
+        props:nameIfcRoot_attribute_simple
+                "B204" ;
+        geo:hasGeometry      [ geo:asWKT  "MULTIPOINT Z((2.50600004196167 -9.970050811767578 3.113000000268417), (4.03000020980835 -6.849999904632568 5.699999904632764))" ] ;
+        owl:sameAs           inst:IfcSpace_2875 ;
+        bot:adjacentElement  inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597fa3 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b70a9 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b96c4 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98515e , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533e77 , inst:wall_9808fd7f-dc48-478e-9217-628e833d55b5 , inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533fec .
+
+inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533a28
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "204300" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1aj$VJZFn2TxepZUBcKpee" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):204300" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((1.431400001013287 -9.724999904632574 2.612), (1.555399998986729 -6.250000000000005 3.1000000054836274))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_35330 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d5393
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "144684" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FLEJ" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):144684" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.67499999999999 -6.7899999989867235 3.100000000000196), (6.293999958038319 -6.666000001013281 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5983 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 , inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433df .
+
+inst:slab_09a873b2-0e03-4eb2-b9f1-da270188dc92
+        a                             bot:Element , beo:Slab , beo:Slab-ROOF ;
+        props:batid_attribute_simple  "184483" ;
+        props:globalIdIfcRoot_attribute_simple
+                "09g7Eo3WDEihdnsYS1YDoI" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Roof:Live Roof over Wood Joist Flat Roof:184483" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Roof:Live Roof over Wood Joist Flat Roof" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.41700000000000076 -17.382999999999985 6.0), (8.383000080108642 -0.41700039672851474 6.456999987363815))" ] ;
+        owl:sameAs                    inst:IfcSlab_22427 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5330 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5246 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5512 , inst:wall_9808fd7f-dc48-478e-9217-628e833d574f , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533e77 , inst:wall_9808fd7f-dc48-478e-9217-628e833d55b5 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5275 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5239 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e65338fa , inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e , inst:wall_9808fd7f-dc48-478e-9217-628e833d5393 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 .
+
+inst:storey_7b7032cc-b822-417b-9aea-6429f95d6693
+        a                    bot:Storey ;
+        props:elevationIfcBuildingStorey_attribute_simple
+                "3.100000000000196"^^xsd:double ;
+        props:globalIdIfcRoot_attribute_simple
+                "1xS3BCk291UvhgP2dvNMQJ" ;
+        props:nameIfcRoot_attribute_simple
+                "Level 2" ;
+        owl:sameAs           inst:IfcBuildingStorey_43 ;
+        bot:containsElement  inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98515e , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444cb4 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b97df , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc056 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98516e , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444cde , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc858 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5512 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e65338fa , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98514e , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444a9a , inst:wall_9808fd7f-dc48-478e-9217-628e833d5246 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5275 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985166 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcaa4 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444af9 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b9655 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcfa0 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d84448e3 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f2f4 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc09f , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533fec , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b720f , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc9850b2 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc370 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdccc1 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985156 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5393 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc11a , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7361 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7236 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b96c4 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444e01 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc3d4 , inst:wall_9808fd7f-dc48-478e-9217-628e833d568d , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444b93 , inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597b0a , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533e77 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444d36 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985170 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f37b , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f37a , inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533926 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b8873 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d844491c , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f31b , inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e , inst:wall_9808fd7f-dc48-478e-9217-628e833d55b5 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985144 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b700f , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7300 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b70a9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5330 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444fe8 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcc4c , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b72d9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5611 , inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597fa3 ;
+        bot:hasSpace         inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433df , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0cc , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d68 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 , inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433cc .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d568d
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "143410" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FLQD" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:143410" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.0 -0.4169999978542329 3.100000000000196), (8.800000190734863 -2.145767313832536E-9 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5397 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7300 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcaa4 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f37a , inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcc4c ;
+        bot:hasSubElement             inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc858 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdccc1 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcaa4 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcc4c .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d7938
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "139143" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FNau" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):139143" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.4500000010132807 -9.725000076293913 0.0), (2.573999998986723 -6.804999999999967 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4176 ;
+        lbd:containsInBoundingBox     inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98500b , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0dc , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985003 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc24f , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 ;
+        bot:hasSubElement             inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc24f .
+
+inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53ebc8
+        a                             beo:Beam , bot:Element ;
+        props:batid_attribute_simple  "207325" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OrWItJ6zAwBNp0OUxK_l8" ;
+        props:nameIfcRoot_attribute_simple
+                "M_W-Wide Flange:W310X60:W310X60:207325" ;
+        props:objectTypeIfcObject_attribute_simple
+                "M_W-Wide Flange:W310X60:208816" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.298500002920628 -17.421299934387207 2.7969999969007544), (4.501499997079373 -10.000000000000014 3.10000000000019))" ] ;
+        owl:sameAs                    inst:IfcBeam_36564 .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985003
+        a                             beo:Covering-CEILING , beo:Covering , bot:Element ;
+        props:batid_attribute_simple  "187462" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc503" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187462" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.5739998817443848 -9.725000381469727 2.5999999046325684), (4.125 -7.677000045776367 2.6570000648498535))" ] ;
+        owl:sameAs                    inst:IfcCovering_23696 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98500b , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc9850b2
+        a                             bot:Element , beo:Covering-CEILING , beo:Covering ;
+        props:batid_attribute_simple  "187639" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc52o" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187639" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999957084656 -6.665999889373779 5.699999904632764), (4.125 -0.4169999957084656 5.7570000648500494))" ] ;
+        owl:sameAs                    inst:IfcCovering_23988 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 , inst:wall_9808fd7f-dc48-478e-9217-628e833d574f , inst:wall_9808fd7f-dc48-478e-9217-628e833d568d , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985166 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 .
+
+inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533ae9
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "204493" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1aj$VJZFn2TxepZUBcKphf" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):204493" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((7.244600001013235 -11.55 2.612), (7.368599998986677 -8.075000095367432 3.1000000054836274))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_35375 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:member_f26519b1-a697-4f79-9628-ca1443a95258 .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b720f
+        a                             beo:Slab , bot:Element , beo:Slab-FLOOR ;
+        props:batid_attribute_simple  "169354" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUt8F" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Wood:169354" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Wood" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999999999994 -17.38299999999999 3.1000000000001955), (4.1249999446868895 -11.13399992752074 3.1189999993892483))" ] ;
+        owl:sameAs                    inst:IfcSlab_20950 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b8873 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d7af9
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "138310" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FNhv" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:138310" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.1457662036095115E-9 -17.382999999999967 0.0), (0.4169999978542318 -0.4170003967284863 3.0999999046325684))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4046 ;
+        lbd:containsInBoundingBox     inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985748 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d42 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb448 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb6d5 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d7f ;
+        bot:hasSubElement             inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdb6d5 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdb448 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d548e
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "143921" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FLIE" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):143921" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Partition (92mm Stud):128360" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.382000001013279 -11.673999786376962 3.100000000000196), (2.505999998986721 -6.250000000000009 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5636 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b720f , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7236 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7300 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98516e ;
+        bot:hasSubElement             inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b96c4 .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98515e
+        a                             bot:Element , beo:Covering-CEILING , beo:Covering ;
+        props:batid_attribute_simple  "187675" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc55U" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187675" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.50600004196167 -11.010000228881836 5.699999904632764), (4.125 -6.849999904632568 5.7570000648500494))" ] ;
+        owl:sameAs                    inst:IfcCovering_24230 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0cc , inst:wall_9808fd7f-dc48-478e-9217-628e833d5512 , inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433cc , inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d5611
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "143534" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FLOH" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:143534" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((-1.9073488921605986E-7 -17.799999997854233 3.100000000000196), (8.799999999999974 -17.383000002145767 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5497 ;
+        lbd:containsInBoundingBox     inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f2f4 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc056 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc09f , inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcfa0 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc11a , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f31b , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 ;
+        bot:hasSubElement             inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdcfa0 , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc09f , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc11a , inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc056 .
+
+inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444e01
+        a                             beo:Window , bot:Element ;
+        props:batid_attribute_simple  "180663" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1l0GAJtRTFv8$zmKJOH4u1" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:819mm x 759mm:819mm x 759mm:180663" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.758999999999998"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.8190000000000001"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.291532407219023E-9 -14.48299999999996 4.85100000000021), (0.416999999999998 -13.663999994277923 5.610000003338057))" ] ;
+        owl:sameAs                    inst:IfcWindow_21967 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d5659 , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f2f4 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca .
+
+inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444af9
+        a                             beo:Window , bot:Element ;
+        props:batid_attribute_simple  "181583" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1l0GAJtRTFv8$zmKJOH4hv" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:819mm x 759mm:819mm x 759mm:181583" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.7589999999999986"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.8189999999999995"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.382999999999996 -4.136000005722073 3.2000000000002093), (8.799999995708461 -3.317000000000036 3.959000003338057))" ] ;
+        owl:sameAs                    inst:IfcWindow_22279 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 .
+
+inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433df
+        a                    bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "2gRXFgjRn2HPE$YoDLX3FV" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Utility" ;
+        props:nameIfcRoot_attribute_simple
+                "A205" ;
+        geo:hasGeometry      [ geo:asWKT  "MULTIPOINT Z((4.769999980926514 -7.721384048461914 3.113000000268417), (6.294000148773193 -6.789999961853027 5.699999904632764))" ] ;
+        owl:sameAs           inst:IfcSpace_3484 ;
+        bot:adjacentElement  inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98514e , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e65338fa , inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597b0a , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533926 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b700f , inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5393 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5275 .
+
+inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e655
+        a                             beo:Railing-NOTDEFINED , bot:Element , beo:Railing ;
+        props:batid_attribute_simple  "151162" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0wkEuT1wr1kOyafLY4v_PL" ;
+        props:nameIfcRoot_attribute_simple
+                "Railing:900mm Handrail Only:151162" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Railing:900mm Handrail Only" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((8.337999999981012 -11.825000308227526 1.0431436677672035), (8.378000000483926 -8.075 3.999999913524284))" ] ;
+        owl:sameAs                    inst:IfcRailing_9269 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:member_aee7272c-8ef2-4af0-b3f4-1509a4c67b98 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985031 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 .
+
+inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444fe8
+        a                             bot:Element , beo:Window ;
+        props:batid_attribute_simple  "180318" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1l0GAJtRTFv8$zmKJOH4$e" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:2800mm x 2410mm:2800mm x 2410mm:180318" ;
+        props:objectTypeIfcObject_attribute_simple
+                "2800mm x 2410mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "2.409999999999996"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "2.8"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.291529021038798E-9 -17.38299999999996 3.20000000000021), (0.4169999999999946 -14.583000047683687 5.610000085830885))" ] ;
+        owl:sameAs                    inst:IfcWindow_21915 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f2f4 .
+
+inst:window_6b61ce71-1a7a-473c-8f87-4262e0bdc11a
+        a                             beo:Window , bot:Element ;
+        props:batid_attribute_simple  "149924" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlS4Q" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Fixed:819mm x 759mm:819mm x 759mm:149924" ;
+        props:objectTypeIfcObject_attribute_simple
+                "819mm x 759mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.758999999999998"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "0.8190000000000001"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((7.563999994277928 -17.799999995708465 4.85100000000021), (8.382999999999965 -17.383 5.610000003338057))" ] ;
+        owl:sameAs                    inst:IfcWindow_7896 ;
+        lbd:containsInBoundingBox     inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f31b .
+
+inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533fec
+        a                             bot:Element , beo:Door ;
+        props:batid_attribute_simple  "203720" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1aj$VJZFn2TxepZUBcKp$i" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:0762 x 2032mm:0762 x 2032mm:203720" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0762 x 2032mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.032"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.762"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.4500000004768347 -10.119051182444498 3.100000000000196), (3.363999997556207 -9.945051178138062 5.208000040054517))" ] ;
+        owl:sameAs                    inst:IfcDoor_35196 ;
+        lbd:containsInBoundingBox     inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433cc , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b70a9 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7236 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533e77 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0cc , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e .
+
+inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f37a
+        a                             beo:Beam , bot:Element ;
+        props:batid_attribute_simple  "209263" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OrWItJ6zAwBNp0OUxK$Dw" ;
+        props:nameIfcRoot_attribute_simple
+                "M_W-Wide Flange:W410X60:W410X60:209263" ;
+        props:objectTypeIfcObject_attribute_simple
+                "M_W-Wide Flange:W410X60:208814" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.2710457666231978 -0.36023313857604866 5.592999994754999), (4.371045671255768 -0.18223313547660713 6.0000000000002025))" ] ;
+        owl:sameAs                    inst:IfcBeam_37594 .
+
+inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985166
+        a                             bot:Element , beo:Covering-CEILING , beo:Covering ;
+        props:batid_attribute_simple  "187683" ;
+        props:globalIdIfcRoot_attribute_simple
+                "3bXiCStxP6Fgxdej$yc55c" ;
+        props:nameIfcRoot_attribute_simple
+                "Compound Ceiling:Gypsum Board:187683" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Compound Ceiling:Gypsum Board" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999957084656 -11.550000190734863 5.699999904632764), (2.381999969482422 -6.25 5.7570000648500494))" ] ;
+        owl:sameAs                    inst:IfcCovering_24288 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98516e , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 .
+
+inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c
+        a                          bot:Space ;
+        props:globalIdIfcRoot_attribute_simple
+                "0BTBFw6f90Nfh9rP1dlXri" ;
+        props:longNameIfcSpatialStructureElement_attribute_simple
+                "Hallway" ;
+        props:nameIfcRoot_attribute_simple
+                "A201" ;
+        geo:hasGeometry            [ geo:asWKT  "MULTIPOINT Z((6.417999999999999 -11.55000000000001 3.100000000000196), (8.3830000333786 -6.249999809265146 5.699999904632764))" ] ;
+        owl:sameAs                 inst:IfcSpace_935 ;
+        lbd:containsInBoundingBox  inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533ae9 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d65 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d66 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e655 ;
+        bot:adjacentElement        inst:wall_9808fd7f-dc48-478e-9217-628e833d5246 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5239 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc370 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5275 , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b97df , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b9655 , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533926 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 , inst:wall_9808fd7f-dc48-478e-9217-628e833d56c9 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985156 , inst:roof_2da40d62-4698-436c-a2c3-95c49bb70eef .
+
+inst:footing_2e3c415a-d885-4964-a589-bb0941bdd16f
+        a                             beo:Footing-STRIP_FOOTING , beo:Footing , bot:Element ;
+        props:batid_attribute_simple  "186604" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0kF45Qs8L9PAM9kmb1lT5l" ;
+        props:nameIfcRoot_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300:186604" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((-0.24150000512599945 -18.041500091552734 -1.550000011920929), (8.141500473022461 -17.14150047302246 -1.25))" ] ;
+        owl:sameAs                    inst:IfcFooting_23299 .
+
+inst:footing_2e3c415a-d885-4964-a589-bb0941bdd08b
+        a                             bot:Element , beo:Footing-STRIP_FOOTING , beo:Footing ;
+        props:batid_attribute_simple  "186632" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0kF45Qs8L9PAM9kmb1lT2B" ;
+        props:nameIfcRoot_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300:186632" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((3.950000047683716 -8.25 -1.550000011920929), (8.141500473022461 -7.349999904632568 -1.25))" ] ;
+        owl:sameAs                    inst:IfcFooting_23415 ;
+        lbd:containsInBoundingBox     inst:footing_2e3c415a-d885-4964-a589-bb0941bdd097 , inst:wall_9808fd7f-dc48-478e-9217-628e833d40ce , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd167 .
+
+inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533926
+        a                             bot:Element , beo:Door ;
+        props:batid_attribute_simple  "204034" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1aj$VJZFn2TxepZUBcKpac" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:0762 x 2032mm:0762 x 2032mm:204034" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0762 x 2032mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.032"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.762"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((5.455375002443795 -7.870384235444055 3.100000000000196), (6.369374999523167 -7.696384231137619 5.208000040054517))" ] ;
+        owl:sameAs                    inst:IfcDoor_35291 ;
+        lbd:containsInBoundingBox     inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433df , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d68 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d5659
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "143590" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FLPP" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:143590" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Exterior - Brick on Block:130892" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.1457662036095115E-9 -17.79999999999997 3.100000000000196), (0.4169999978542318 -7.629394218611196E-7 6.000000095367628))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_5547 ;
+        lbd:containsInBoundingBox     inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f37a , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444fe8 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc985166 , inst:covering_e586c31c-dfb6-463e-aee7-a2dffc98516e , inst:beam_98d604b7-4c6f-4ae8-b5f3-0187bb53f2f4 ;
+        bot:hasSubElement             inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444e01 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444d36 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444fe8 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d84448e3 , inst:window_6f010293-ddb7-4fe4-8ffd-c144d8444cb4 .
+
+inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e
+        a                             bot:Element , beo:Slab , beo:Slab-FLOOR ;
+        props:batid_attribute_simple  "144800" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlRqU" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Residential - Wood Joist with Subflooring:144800" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Residential - Wood Joist with Subflooring" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999999999994 -17.38299999999999 2.7950000000001958), (4.1249999446868895 -0.4170003967285041 3.1000000071527536))" ] ;
+        owl:sameAs                    inst:IfcSlab_6079 ;
+        lbd:containsInBoundingBox     inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597fa3 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7236 , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e , inst:wall_2c391822-07f8-4a22-86a8-a1e57412df9e , inst:member_d776d4d4-ad53-498c-9675-a4d357bd81ef , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533e77 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d386 , inst:railing_81be7c96-ce56-447e-9d93-021422f830c5 , inst:railing_81be7c96-ce56-447e-9d93-021422f83119 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46ec , inst:wall_9808fd7f-dc48-478e-9217-628e833d574f , inst:wall_2c391822-07f8-4a22-86a8-a1e57412dcef , inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b8873 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:wall_9808fd7f-dc48-478e-9217-628e833d7938 , inst:member_5f1efada-bcd8-41b6-aff4-ad3fb24b7679 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5512 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7300 , inst:stairflight_06e324b6-962d-4317-b253-85e1df8c71f8 , inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b720f , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b70a9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d7be7 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d8c1 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533a28 .
+
+inst:wall_2c391822-07f8-4a22-86a8-a1e57412d386
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "190933" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0iEHWY1$XA8eQeeULq4jE6" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):190933" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):187795" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999999999992 -10.36999999755621 0.0), (4.618000213623046 -10.218000002443791 2.7950000762939453))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_24691 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d7f .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b70a9
+        a                             bot:Element , beo:Slab , beo:Slab-FLOOR ;
+        props:batid_attribute_simple  "169772" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUt2f" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile:169772" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.5059999999999913 -11.009999999999998 3.1000000000001955), (4.0300000486373815 -6.85000015258789 3.113000000268417))" ] ;
+        owl:sameAs                    inst:IfcSlab_21132 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597fa3 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533e77 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0cc , inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433cc .
+
+inst:footing_2e3c415a-d885-4964-a589-bb0941bdd177
+        a                             beo:Footing-STRIP_FOOTING , bot:Element , beo:Footing ;
+        props:batid_attribute_simple  "186612" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0kF45Qs8L9PAM9kmb1lT5t" ;
+        props:nameIfcRoot_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300:186612" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Wall Foundation:Bearing Footing - 900 x 300" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((-0.24150000512599945 -17.14150047302246 -1.550000011920929), (0.6585000157356262 0.24150000512599945 -1.2499999999999998))" ] ;
+        owl:sameAs                    inst:IfcFooting_23338 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d4385 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd0a3 , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd17f , inst:footing_2e3c415a-d885-4964-a589-bb0941bdd16f .
+
+inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b96c4
+        a                             bot:Element , beo:Door ;
+        props:batid_attribute_simple  "160065" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUvR4" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:0864 x 2032mm:0864 x 2032mm:160065" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0864 x 2032mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.032"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.8639999999999986"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((2.3569999996274653 -9.946051176126403 3.100000000000196), (2.531000003933901 -8.93005118095438 5.208000040054517))" ] ;
+        owl:sameAs                    inst:IfcDoor_16003 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b70a9 , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7236 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0cc , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533fec .
+
+inst:door_7606d7eb-508f-40ce-a522-9b526ddc728b
+        a                             beo:Door , bot:Element ;
+        props:batid_attribute_simple  "171975" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1s1jVhK8z0pgKYcr9jt7AB" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Glass 1:0813 x 2420mm:0813 x 2420mm:171975" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0813 x 2420mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.42"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.8129999999999993"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((5.276000001430507 -17.825000001668933 0.0), (6.240999997556205 -17.357999999627474 2.496000051498413))" ] ;
+        owl:sameAs                    inst:IfcDoor_21864 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d42 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:wall_9808fd7f-dc48-478e-9217-628e833d441c .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7b5b
+        a                             beo:Slab , bot:Element , beo:Slab-FLOOR ;
+        props:batid_attribute_simple  "171230" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUtjR" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile:171230" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Ceramic Tile" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.770000000000001 -10.246000000000036 0.0), (6.2259999704360975 -8.074999996185333 0.013000000268220901))" ] ;
+        owl:sameAs                    inst:IfcSlab_21432 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc223 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:slab_9808fd7f-dc48-478e-9217-628e833d49bd , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5 .
+
+inst:wall_9808fd7f-dc48-478e-9217-628e833d40ce
+        a                             bot:Element , beo:Wall ;
+        props:batid_attribute_simple  "140913" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2O2Fr$t4X7Zf8NOew3FK3E" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Foundation - Concrete (435mm):140913" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Foundation - Concrete (435mm):207146" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.1824999885559 -8.017500001192094 -1.25), (8.382999999999992 -7.582499998807908 0.0))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_4921 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7a99 , inst:wall_9808fd7f-dc48-478e-9217-628e833d46d1 , inst:slab_9808fd7f-dc48-478e-9217-628e833d410f , inst:wall_9808fd7f-dc48-478e-9217-628e833d795d .
+
+inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597b0a
+        a                             beo:Wall , bot:Element ;
+        props:batid_attribute_simple  "193247" ;
+        props:globalIdIfcRoot_attribute_simple
+                "0dxE1Sy6nDqfpDb5vIMNiA" ;
+        props:nameIfcRoot_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):193247" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Basic Wall:Interior - Furring (152 mm Stud):187795" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.61800000244378 -10.949999847412112 3.100000000000196), (4.769999997556199 -6.790000000000003 5.695000028610425))" ] ;
+        owl:sameAs                    inst:IfcWallStandardCase_31309 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d68 , inst:space_aa6e13ea-b5bc-4245-93bf-8b23558433df , inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 .
+
+inst:window_4ec82fcb-9118-4408-a3ae-37969a372f02
+        a                             beo:Window , bot:Element ;
+        props:batid_attribute_simple  "185718" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1Eo2$BaHX42AEkDvQQDoy2" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Skylight:1180 x 1170mm:1180 x 1170mm:185718" ;
+        props:objectTypeIfcObject_attribute_simple
+                "1180 x 1170mm" ;
+        props:overallHeightIfcWindow_attribute_simple
+                "0.6348000000000008"^^xsd:double ;
+        props:overallWidthIfcWindow_attribute_simple
+                "1.172537682966587"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((6.822731181225666 -7.747268825450773 6.457000181579589), (7.995268835863956 -6.5227311548384375 6.634799883270263))" ] ;
+        owl:sameAs                    inst:IfcWindow_23183 .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7ef5
+        a                             beo:Slab-FLOOR , bot:Element , beo:Slab ;
+        props:batid_attribute_simple  "170352" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUtxr" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Wood:170352" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Wood" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999999999994 -17.38300000000001 0.0), (8.383000080108642 -8.07500038909913 0.01899999938905239))" ] ;
+        owl:sameAs                    inst:IfcSlab_21336 ;
+        lbd:containsInBoundingBox     inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d78 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d7f , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d42 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d9 .
+
+inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd56
+        a                             beo:Slab-FLOOR , bot:Element , beo:Slab ;
+        props:batid_attribute_simple  "144872" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlRrM" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Residential - Wood Joist with Subflooring:144872" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Residential - Wood Joist with Subflooring" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((4.674999999999998 -17.383 2.7950000000001958), (8.382999944686887 -0.41700039672851474 3.1000000071527536))" ] ;
+        owl:sameAs                    inst:IfcSlab_6192 ;
+        lbd:containsInBoundingBox     inst:wall_9808fd7f-dc48-478e-9217-628e833d795d , inst:wall_9808fd7f-dc48-478e-9217-628e833d46d1 , inst:wall_9808fd7f-dc48-478e-9217-628e833d44b8 , inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc370 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d365 , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e655 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533ae9 , inst:door_64b7f7d3-8cfc-4277-ba33-8de2e6533926 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b72d9 , inst:member_f26519b1-a697-4f79-9628-ca1443a95258 , inst:wall_9808fd7f-dc48-478e-9217-628e833d4938 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7160 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d6c , inst:space_0b74b3fa-1a92-405e-9ac9-d59067be1d75 , inst:stairflight_ca457005-aa0d-4679-92c1-5067d702c9f3 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e65338fa , inst:wall_27ece05c-f06c-4dd2-9ccd-945e52597b0a , inst:wall_9808fd7f-dc48-478e-9217-628e833d471d , inst:railing_3ab8ee1d-07ad-41b9-8f24-a55884e7e651 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5239 , inst:wall_9808fd7f-dc48-478e-9217-628e833d5393 , inst:wall_2c391822-07f8-4a22-86a8-a1e57412d8c1 , inst:member_aee7272c-8ef2-4af0-b3f4-1509a4c67b98 , inst:wall_9808fd7f-dc48-478e-9217-628e833d441c .
+
+inst:door_6b61ce71-1a7a-473c-8f87-4262e0bdc3d4
+        a                             beo:Door , bot:Element ;
+        props:batid_attribute_simple  "150378" ;
+        props:globalIdIfcRoot_attribute_simple
+                "1hOSvn6df7F8_7GcBWlSFK" ;
+        props:nameIfcRoot_attribute_simple
+                "M_Single-Flush:0864 x 2032mm:0864 x 2032mm:150378" ;
+        props:objectTypeIfcObject_attribute_simple
+                "0864 x 2032mm" ;
+        props:overallHeightIfcDoor_attribute_simple
+                "2.032"^^xsd:double ;
+        props:overallWidthIfcDoor_attribute_simple
+                "0.8639999999999999"^^xsd:double ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((1.407300002443785 -6.275000000372534 3.1000000000001955), (2.4232999976158087 -6.100999996066099 5.208000040054516))" ] ;
+        owl:sameAs                    inst:IfcDoor_8228 ;
+        lbd:containsInBoundingBox     inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7300 , inst:wall_9808fd7f-dc48-478e-9217-628e833d574f , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7236 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533a28 , inst:wall_9808fd7f-dc48-478e-9217-628e833d548e , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 , inst:slab_6b61ce71-1a7a-473c-8f87-4262e0bdbd1e , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:railing_81be7c96-ce56-447e-9d93-021422f830c5 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 .
+
+inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b7236
+        a                             beo:Slab-FLOOR , beo:Slab , bot:Element ;
+        props:batid_attribute_simple  "169395" ;
+        props:globalIdIfcRoot_attribute_simple
+                "2OBrcmyk58NupXoVOHUt8s" ;
+        props:nameIfcRoot_attribute_simple
+                "Floor:Finish Floor - Wood:169395" ;
+        props:objectTypeIfcObject_attribute_simple
+                "Floor:Finish Floor - Wood" ;
+        geo:hasGeometry               [ geo:asWKT
+                          "MULTIPOINT Z((0.4169999999999994 -11.674 3.1000000000001955), (2.505999986648559 -6.126000141143798 3.1189999993892483))" ] ;
+        owl:sameAs                    inst:IfcSlab_21017 ;
+        lbd:containsInBoundingBox     inst:door_982f59b0-f2e1-485f-8ce1-c9f6117b8873 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0d0 , inst:slab_982f59b0-f2e1-485f-8ce1-c9f6117b720f , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0c9 , inst:railing_81be7c96-ce56-447e-9d93-021422f830c5 , inst:wall_64b7f7d3-8cfc-4277-ba33-8de2e6533a28 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0da , inst:wall_9808fd7f-dc48-478e-9217-628e833d54e7 , inst:space_0b74b3fa-1a92-405e-9ac9-d59067bfe0ca , inst:wall_9808fd7f-dc48-478e-9217-628e833d574f , inst:railing_81be7c96-ce56-447e-9d93-021422f83119 .

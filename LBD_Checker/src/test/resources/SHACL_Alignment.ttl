@@ -1,0 +1,41 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix inst:  <https://dot.dc.rwth-aachen.de/ldb#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc:   <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL#> .
+
+inst:prefixes
+    a owl:Ontology ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL#"^^xsd:anyURI ;
+        sh:prefix "ifc" ;
+    ] ; 
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://w3id.org/express#"^^xsd:anyURI ;
+        sh:prefix "express" ;
+    ] ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "http://lbd.arch.rwth-aachen.de/props#"^^xsd:anyURI ; 
+        sh:prefix "props" ;
+    ]    .
+
+inst:shapeBOTClasses a sh:NodeShape ;
+  sh:targetClass ifc:IfcSite, ifc:IfcBuilding,  ifc:Store;
+    sh:property [
+    sh:sparql [
+      a sh:SPARQLConstraint ;
+      sh:message "GUIDs of the aligment instances should match." ;
+      sh:prefixes inst:prefixes;
+      sh:select """
+        SELECT $this (?guid as ?value){          
+          $this   ifc:globalId_IfcRoot/express:hasString ?guid .
+          FILTER NOT EXISTS { ?botelement props:globalIdIfcRoot_attribute_simple ?guid } 
+        }
+        """
+     ]
+ 
+  ] .
+  

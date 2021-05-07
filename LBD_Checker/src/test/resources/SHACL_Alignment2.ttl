@@ -1,0 +1,54 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix inst:  <https://dot.dc.rwth-aachen.de/ldb#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc:   <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL#> .
+
+inst:prefixes
+    a owl:Ontology ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL#"^^xsd:anyURI ;
+        sh:prefix "ifc" ;
+    ] ; 
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://w3id.org/express#"^^xsd:anyURI ;
+        sh:prefix "express" ;
+    ] ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "http://lbd.arch.rwth-aachen.de/props#"^^xsd:anyURI ; 
+        sh:prefix "props" ;
+    ]    ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://w3id.org/bot#"^^xsd:anyURI ; 
+        sh:prefix "bot" ;
+    ]    .
+
+inst:shapeBOTRelations a sh:NodeShape ;
+  sh:targetClass ifc:IfcSite, ifc:IfcBuilding,  ifc:Store;
+    sh:property [
+    sh:sparql [
+      a sh:SPARQLConstraint ;
+      sh:message "If there is bot:Site and bot:Building, they should be connected with bot:hasBuilding." ;
+      sh:prefixes inst:prefixes;
+      sh:select """
+        SELECT $this (?guid as ?value){          
+          $this   ifc:globalId_IfcRoot/express:hasString ?guid1 .
+          $this   a ifc:IfcSite .
+          
+          $ifc_building   ifc:globalId_IfcRoot/express:hasString ?guid2 .
+          $ifc_building   a ifc:IfcBuilding .
+          
+          ?bot_site_element props:globalIdIfcRoot_attribute_simple ?guid1 .
+          ?bot_building_element props:globalIdIfcRoot_attribute_simple ?guid2 . 
+          
+          FILTER NOT EXISTS { ?bot_site_element bot:hasBuilding ?bot_building_element } 
+        }
+        """
+     ]
+ 
+  ] .
+  

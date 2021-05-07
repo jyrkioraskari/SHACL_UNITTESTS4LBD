@@ -1,0 +1,560 @@
+@prefix props:	<https://w3id.org/props#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:		<https://example.org/> .
+@prefix inst:	<https://172.16.10.122:8080/projects/1001/> .
+
+### ELEMENTS ###
+
+# WALLS
+inst:wall_1xS3BCk291UvhgP2dvNtzh
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNtzh
+props:dimensionsLength "8383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNt_8
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNt_8
+props:dimensionsLength "17383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNt%24O
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNt%24O
+props:dimensionsLength "8383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNtXZ
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNtXZ
+props:dimensionsLength "17383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNtbz
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNtbz
+props:dimensionsLength "3791.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNtkY
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNtkY
+props:dimensionsLength "3195"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNtl7
+props:identityDataName "Party Wall - CMU Residential Unit Dimising Wall" .
+inst:wall_1xS3BCk291UvhgP2dvNtl7
+props:dimensionsLength "4191.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNqHs
+props:identityDataName "Party Wall - CMU Residential Unit Dimising Wall" .
+inst:wall_1xS3BCk291UvhgP2dvNqHs
+props:dimensionsLength "4191.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNqHB
+props:identityDataName "Party Wall - CMU Residential Unit Dimising Wall" .
+inst:wall_1xS3BCk291UvhgP2dvNqHB
+props:dimensionsLength "2200"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNqM7
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNqM7
+props:dimensionsLength "3195"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNqOY
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNqOY
+props:dimensionsLength "1594"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNqQ6
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNqQ6
+props:dimensionsLength "3791.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNq2Q
+props:identityDataName "Foundation - Concrete (417mm)" .
+inst:wall_1xS3BCk291UvhgP2dvNq2Q
+props:dimensionsLength "8383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNq3D
+props:identityDataName "Foundation - Concrete (417mm)" .
+inst:wall_1xS3BCk291UvhgP2dvNq3D
+props:dimensionsLength "17383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNq4l
+props:identityDataName "Foundation - Concrete (417mm)" .
+inst:wall_1xS3BCk291UvhgP2dvNq4l
+props:dimensionsLength "8383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNq4V
+props:identityDataName "Foundation - Concrete (417mm)" .
+inst:wall_1xS3BCk291UvhgP2dvNq4V
+props:dimensionsLength "17383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNq9K
+props:identityDataName "Foundation - Concrete (435mm)" .
+inst:wall_1xS3BCk291UvhgP2dvNq9K
+props:dimensionsLength "4191.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNqAU
+props:identityDataName "Foundation - Concrete (435mm)" .
+inst:wall_1xS3BCk291UvhgP2dvNqAU
+props:dimensionsLength "4191.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNqB%24
+props:identityDataName "Foundation - Concrete (435mm)" .
+inst:wall_1xS3BCk291UvhgP2dvNqB%24
+props:dimensionsLength "2200"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNqkY
+props:identityDataName "Party Wall - CMU Residential Unit Dimising Wall" .
+inst:wall_1xS3BCk291UvhgP2dvNqkY
+props:dimensionsLength "17383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNrGN
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNrGN
+props:dimensionsLength "8383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNrHJ
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNrHJ
+props:dimensionsLength "17383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNrIB
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNrIB
+props:dimensionsLength "8383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNrJ3
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNrJ3
+props:dimensionsLength "17383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNrNL
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNrNL
+props:dimensionsLength "2235.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNrOK
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNrOK
+props:dimensionsLength "5424"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNrPz
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNrPz
+props:dimensionsLength "2235.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNrSl
+props:identityDataName "Interior - Plumbing (152mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNrSl
+props:dimensionsLength "1956"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNrU8
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNrU8
+props:dimensionsLength "1956"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNr2Z
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNr2Z
+props:dimensionsLength "2235.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNr3l
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNr3l
+props:dimensionsLength "5424"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNr3S
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNr3S
+props:dimensionsLength "2235.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNr49
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNr49
+props:dimensionsLength "1956"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNr6g
+props:identityDataName "Interior - Plumbing (152mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNr6g
+props:dimensionsLength "1956"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNxPL
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNxPL
+props:dimensionsLength "8383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNxQJ
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNxQJ
+props:dimensionsLength "17383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNxRD
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNxRD
+props:dimensionsLength "8383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNxSe
+props:identityDataName "Exterior - Brick on Block" .
+inst:wall_1xS3BCk291UvhgP2dvNxSe
+props:dimensionsLength "17383"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNuQt
+props:identityDataName "Interior - Furring (152 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNuQt
+props:dimensionsLength "4485.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNu7e
+props:identityDataName "Interior - Furring (152 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNu7e
+props:dimensionsLength "2508"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNuAP
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNuAP
+props:dimensionsLength "1594"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNuqJ
+props:identityDataName "Interior - Furring (152 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNuqJ
+props:dimensionsLength "2508"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNutm
+props:identityDataName "Interior - Furring (152 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNutm
+props:dimensionsLength "4485.5"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNvRw
+props:identityDataName "Interior - Furring (152 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNvRw
+props:dimensionsLength "4314"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNv9J
+props:identityDataName "Interior - Furring (152 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNv9J
+props:dimensionsLength "4314"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNdvs
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNdvs
+props:dimensionsLength "1662"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNdZx
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNdZx
+props:dimensionsLength "1662"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNdef
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNdef
+props:dimensionsLength "3812"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNdhe
+props:identityDataName "Interior - Partition (92mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNdhe
+props:dimensionsLength "3812"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNZLZ
+props:identityDataName "Interior - Furring (38 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNZLZ
+props:dimensionsLength "1083.1"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNZLY
+props:identityDataName "Interior - Furring (38 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNZLY
+props:dimensionsLength "1135.1"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNZLj
+props:identityDataName "Interior - Furring (38 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNZLj
+props:dimensionsLength "1083.1"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNZLi
+props:identityDataName "Interior - Furring (38 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNZLi
+props:dimensionsLength "1135.1"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNZNC
+props:identityDataName "Interior - Furring (38 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNZNC
+props:dimensionsLength "1083.1"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNZNF
+props:identityDataName "Interior - Furring (38 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNZNF
+props:dimensionsLength "1135.1"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNZNE
+props:identityDataName "Interior - Furring (38 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNZNE
+props:dimensionsLength "1083.1"^^xsd:decimal .
+inst:wall_1xS3BCk291UvhgP2dvNZN9
+props:identityDataName "Interior - Furring (38 mm Stud)" .
+inst:wall_1xS3BCk291UvhgP2dvNZN9
+props:dimensionsLength "1135.1"^^xsd:decimal .
+
+# WALLTYPES
+inst:Curtain_Wall rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "25"^^xsd:decimal ] .
+inst:Exterior_-_Brick_on_Mtl._Stud rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "302"^^xsd:decimal ] .
+inst:Retaining_-_Concrete_300mm rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "300"^^xsd:decimal ] .
+inst:Exterior_Glazing rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "25"^^xsd:decimal ] .
+inst:Storefront rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "25"^^xsd:decimal ] .
+inst:Exterior_-_Insul_Panel_Over_Brick_w_Metal_Stud rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "302"^^xsd:decimal ] .
+inst:Interior_-_Partition_92mm_Stud rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "124"^^xsd:decimal ] .
+inst:Interior_-_Plumbing_152mm_Stud rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "184"^^xsd:decimal ] .
+inst:Interior_-_Furring_38_mm_Stud rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "54"^^xsd:decimal ] .
+inst:Interior_-_Rated_1-HR_92mm_Stud rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "124"^^xsd:decimal ] .
+inst:Interior_-_CMU_Rated_2-HR rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "194"^^xsd:decimal ] .
+inst:Interior_-_Toilet_Partition_25mm rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "25"^^xsd:decimal ] .
+inst:Party_Wall_-_CMU_Residential_Unit_Dimising_Wall rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "550"^^xsd:decimal ] .
+inst:Foundation_-_Concrete_264mm rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "264"^^xsd:decimal ] .
+inst:Foundation_-_Concrete_350mm rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "350"^^xsd:decimal ] .
+inst:Foundation_-_Concrete_417mm rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "417"^^xsd:decimal ] .
+inst:Exterior_-_Brick_on_Block rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "417"^^xsd:decimal ] .
+inst:Exterior_-_Insul_Panel_on_Mtl._Stud rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "267"^^xsd:decimal ] .
+inst:Foundation_-_Concrete_300mm rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "300"^^xsd:decimal ] .
+inst:Chain_Link_Fence rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "25"^^xsd:decimal ] .
+inst:Interior_-_Furring_152_mm_Stud rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "152"^^xsd:decimal ] .
+inst:Foundation_-_Concrete_435mm rdfs:subClassOf [ a owl:Restriction ; owl:onProperty props:dimensionsWidth ; owl:hasValue "435"^^xsd:decimal ] .
+
+# FLOORS
+inst:floor_1xS3BCk291UvhgP2dvNqEL
+props:identityDataName "127mm Slab on Grade" .
+inst:floor_1xS3BCk291UvhgP2dvNqid
+props:identityDataName "127mm Slab on Grade" .
+inst:floor_1xS3BCk291UvhgP2dvNr65
+props:identityDataName "Residential - Wood Joist with Subflooring" .
+inst:floor_1xS3BCk291UvhgP2dvNr7D
+props:identityDataName "Residential - Wood Joist with Subflooring" .
+inst:floor_1xS3BCk291UvhgP2dvN%242W
+props:identityDataName "Finish Floor - Wood" .
+inst:floor_1xS3BCk291UvhgP2dvN%2431
+props:identityDataName "Finish Floor - Wood" .
+inst:floor_1xS3BCk291UvhgP2dvN%245v
+props:identityDataName "Finish Floor - Wood" .
+inst:floor_1xS3BCk291UvhgP2dvN%246l
+props:identityDataName "Finish Floor - Wood" .
+inst:floor_1xS3BCk291UvhgP2dvN%246M
+props:identityDataName "Finish Floor - Wood" .
+inst:floor_1xS3BCk291UvhgP2dvN%24B0
+props:identityDataName "Finish Floor - Wood" .
+inst:floor_1xS3BCk291UvhgP2dvN%24C9
+props:identityDataName "Finish Floor - Ceramic Tile" .
+inst:floor_1xS3BCk291UvhgP2dvN%24El
+props:identityDataName "Finish Floor - Ceramic Tile" .
+inst:floor_1xS3BCk291UvhgP2dvN%24rL
+props:identityDataName "Finish Floor - Wood" .
+inst:floor_1xS3BCk291UvhgP2dvN%24y4
+props:identityDataName "Finish Floor - Ceramic Tile" .
+inst:floor_1xS3BCk291UvhgP2dvN%24Zx
+props:identityDataName "Finish Floor - Ceramic Tile" .
+inst:floor_1xS3BCk291UvhgP2dvN%24ZO
+props:identityDataName "Finish Floor - Ceramic Tile" .
+inst:floor_1xS3BCk291UvhgP2dvN%24av
+props:identityDataName "Finish Floor - Wood" .
+inst:floor_1xS3BCk291UvhgP2dvN%24cH
+props:identityDataName "Finish Floor - Ceramic Tile" .
+inst:floor_1xS3BCk291UvhgP2dvNYcU
+props:identityDataName "150mm Exterior Slab on Grade" .
+inst:floor_1xS3BCk291UvhgP2dvNYdD
+props:identityDataName "150mm Exterior Slab on Grade" .
+
+# WINDOWS & DOORS
+inst:window_1xS3BCk291UvhgP2dvNrrP
+props:identityDataName "4835mm x 2420mm" .
+inst:window_1xS3BCk291UvhgP2dvNrv5
+props:identityDataName "4835mm x 2420mm" .
+inst:door_1xS3BCk291UvhgP2dvNrY1
+props:identityDataName "1250mm x 2010mm" .
+inst:door_1xS3BCk291UvhgP2dvNrZJ
+props:identityDataName "1250mm x 2010mm" .
+inst:window_1xS3BCk291UvhgP2dvNrdW
+props:identityDataName "750mm x 2200mm" .
+inst:window_1xS3BCk291UvhgP2dvNrfE
+props:identityDataName "750mm x 2200mm" .
+inst:window_1xS3BCk291UvhgP2dvNoJ3
+props:identityDataName "2800mm x 2410mm" .
+inst:window_1xS3BCk291UvhgP2dvNoO%24
+props:identityDataName "819mm x 759mm" .
+inst:window_1xS3BCk291UvhgP2dvNo1Q
+props:identityDataName "819mm x 759mm" .
+inst:window_1xS3BCk291UvhgP2dvNo3N
+props:identityDataName "819mm x 759mm" .
+inst:window_1xS3BCk291UvhgP2dvNoCx
+props:identityDataName "2800mm x 2410mm" .
+inst:window_1xS3BCk291UvhgP2dvNom4
+props:identityDataName "819mm x 759mm" .
+inst:window_1xS3BCk291UvhgP2dvNopD
+props:identityDataName "819mm x 759mm" .
+inst:window_1xS3BCk291UvhgP2dvNos1
+props:identityDataName "819mm x 759mm" .
+inst:door_1xS3BCk291UvhgP2dvNowu
+props:identityDataName "0762 x 2032mm" .
+inst:door_1xS3BCk291UvhgP2dvNoxK
+props:identityDataName "0762 x 2032mm" .
+inst:door_1xS3BCk291UvhgP2dvNozF
+props:identityDataName "0864 x 2032mm" .
+inst:door_1xS3BCk291UvhgP2dvNo%24h
+props:identityDataName "0864 x 2032mm" .
+inst:door_1xS3BCk291UvhgP2dvNmlJ
+props:identityDataName "0864 x 2032mm" .
+inst:door_1xS3BCk291UvhgP2dvNnH%24
+props:identityDataName "0864 x 2032mm" .
+inst:door_1xS3BCk291UvhgP2dvNnLa
+props:identityDataName "0864 x 2032mm" .
+inst:door_1xS3BCk291UvhgP2dvNnNr
+props:identityDataName "0864 x 2032mm" .
+inst:door_1xS3BCk291UvhgP2dvN%24je
+props:identityDataName "0813 x 2420mm" .
+inst:door_1xS3BCk291UvhgP2dvN%24lY
+props:identityDataName "0813 x 2420mm" .
+inst:window_1xS3BCk291UvhgP2dvNwHx
+props:identityDataName "2800mm x 2410mm" .
+inst:window_1xS3BCk291UvhgP2dvNwMI
+props:identityDataName "819mm x 759mm" .
+inst:window_1xS3BCk291UvhgP2dvNwQb
+props:identityDataName "819mm x 759mm" .
+inst:window_1xS3BCk291UvhgP2dvNwSd
+props:identityDataName "819mm x 759mm" .
+inst:window_1xS3BCk291UvhgP2dvNwTD
+props:identityDataName "2800mm x 2410mm" .
+inst:window_1xS3BCk291UvhgP2dvNw00
+props:identityDataName "819mm x 759mm" .
+inst:window_1xS3BCk291UvhgP2dvNw49
+props:identityDataName "819mm x 759mm" .
+inst:window_1xS3BCk291UvhgP2dvNw5g
+props:identityDataName "819mm x 759mm" .
+inst:window_1xS3BCk291UvhgP2dvNwAF
+props:identityDataName "750mm x 2200mm" .
+inst:window_1xS3BCk291UvhgP2dvNwDm
+props:identityDataName "750mm x 2200mm" .
+inst:window_1xS3BCk291UvhgP2dvNxVS
+props:identityDataName "1180 x 1170mm" .
+inst:window_1xS3BCk291UvhgP2dvNx5J
+props:identityDataName "1180 x 1170mm" .
+inst:door_1xS3BCk291UvhgP2dvNd%24j
+props:identityDataName "0762 x 2032mm" .
+inst:door_1xS3BCk291UvhgP2dvNdad
+props:identityDataName "0762 x 2032mm" .
+inst:level_1xS3BCk291UvhgP2dvNMKI
+props:identityDataName "Level 1" .
+inst:level_1xS3BCk291UvhgP2dvNMQJ
+props:identityDataName "Level 2" .
+inst:level_1xS3BCk291UvhgP2dvNsgp
+props:identityDataName "T/FDN" .
+inst:level_1xS3BCk291UvhgP2dvNtSE
+props:identityDataName "Roof" .
+
+### SPACES ###
+inst:room_1xS3BCk291UvhgP2dvNvkw
+props:identityDataNumber "A102" .
+inst:room_1xS3BCk291UvhgP2dvNvkw
+props:identityDataName "Living Room A102" .
+inst:room_1xS3BCk291UvhgP2dvNvkw
+props:dimensionsArea "30.14"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvkw
+props:dimensionsVolume "71.39"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvk7
+props:identityDataNumber "A103" .
+inst:room_1xS3BCk291UvhgP2dvNvk7
+props:identityDataName "Kitchen A103" .
+inst:room_1xS3BCk291UvhgP2dvNvk7
+props:dimensionsArea "13.9"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvk7
+props:dimensionsVolume "33.51"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvk0
+props:identityDataNumber "A104" .
+inst:room_1xS3BCk291UvhgP2dvNvk0
+props:identityDataName "Bathroom 1 A104" .
+inst:room_1xS3BCk291UvhgP2dvNvk0
+props:dimensionsArea "4"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvk0
+props:dimensionsVolume "8.18"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvkD
+props:identityDataNumber "A101" .
+inst:room_1xS3BCk291UvhgP2dvNvkD
+props:identityDataName "Foyer A101" .
+inst:room_1xS3BCk291UvhgP2dvNvkD
+props:dimensionsArea "17.94"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvkD
+props:dimensionsVolume "40.24"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvkK
+props:identityDataNumber "A201" .
+inst:room_1xS3BCk291UvhgP2dvNvkK
+props:identityDataName "Hallway A201" .
+inst:room_1xS3BCk291UvhgP2dvNvkK
+props:dimensionsArea "7.8"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvkK
+props:dimensionsVolume "18.12"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvkG
+props:identityDataNumber "A204" .
+inst:room_1xS3BCk291UvhgP2dvNvkG
+props:identityDataName "Bathroom 2 A204" .
+inst:room_1xS3BCk291UvhgP2dvNvkG
+props:dimensionsArea "5.42"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvkG
+props:dimensionsVolume "12.24"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvkT
+props:identityDataNumber "A203" .
+inst:room_1xS3BCk291UvhgP2dvNvkT
+props:identityDataName "Bedroom 2 A203" .
+inst:room_1xS3BCk291UvhgP2dvNvkT
+props:dimensionsArea "26.18"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvkT
+props:dimensionsVolume "56.89"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvkU
+props:identityDataNumber "A202" .
+inst:room_1xS3BCk291UvhgP2dvNvkU
+props:identityDataName "Bedroom 1 A202" .
+inst:room_1xS3BCk291UvhgP2dvNvkU
+props:dimensionsArea "26.12"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNvkU
+props:dimensionsVolume "56.89"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcNR
+props:identityDataNumber "B102" .
+inst:room_1xS3BCk291UvhgP2dvNcNR
+props:identityDataName "Living Room B102" .
+inst:room_1xS3BCk291UvhgP2dvNcNR
+props:dimensionsArea "30.14"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcNR
+props:dimensionsVolume "71.39"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOa
+props:identityDataNumber "B103" .
+inst:room_1xS3BCk291UvhgP2dvNcOa
+props:identityDataName "Kitchen B103" .
+inst:room_1xS3BCk291UvhgP2dvNcOa
+props:dimensionsArea "13.9"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOa
+props:dimensionsVolume "33.51"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOX
+props:identityDataNumber "B104" .
+inst:room_1xS3BCk291UvhgP2dvNcOX
+props:identityDataName "Bathroom 1 B104" .
+inst:room_1xS3BCk291UvhgP2dvNcOX
+props:dimensionsArea "4"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOX
+props:dimensionsVolume "8.18"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOY
+props:identityDataNumber "B101" .
+inst:room_1xS3BCk291UvhgP2dvNcOY
+props:identityDataName "Foyer B101" .
+inst:room_1xS3BCk291UvhgP2dvNcOY
+props:dimensionsArea "17.94"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOY
+props:dimensionsVolume "40.24"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOe
+props:identityDataNumber "B201" .
+inst:room_1xS3BCk291UvhgP2dvNcOe
+props:identityDataName "Hallway B201" .
+inst:room_1xS3BCk291UvhgP2dvNcOe
+props:dimensionsArea "7.8"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOe
+props:dimensionsVolume "18.12"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOq
+props:identityDataNumber "B204" .
+inst:room_1xS3BCk291UvhgP2dvNcOq
+props:identityDataName "Bathroom 2 B204" .
+inst:room_1xS3BCk291UvhgP2dvNcOq
+props:dimensionsArea "5.44"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOq
+props:dimensionsVolume "12.3"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOn
+props:identityDataNumber "B203" .
+inst:room_1xS3BCk291UvhgP2dvNcOn
+props:identityDataName "Bedroom 2 B203" .
+inst:room_1xS3BCk291UvhgP2dvNcOn
+props:dimensionsArea "26.18"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOn
+props:dimensionsVolume "56.89"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOo
+props:identityDataNumber "B202" .
+inst:room_1xS3BCk291UvhgP2dvNcOo
+props:identityDataName "Bedroom 1 B202" .
+inst:room_1xS3BCk291UvhgP2dvNcOo
+props:dimensionsArea "26.12"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNcOo
+props:dimensionsVolume "56.89"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNdjF
+props:identityDataNumber "A205" .
+inst:room_1xS3BCk291UvhgP2dvNdjF
+props:identityDataName "Utility A205" .
+inst:room_1xS3BCk291UvhgP2dvNdjF
+props:dimensionsArea "1.75"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNdjF
+props:dimensionsVolume "3.67"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNdjS
+props:identityDataNumber "B205" .
+inst:room_1xS3BCk291UvhgP2dvNdjS
+props:identityDataName "Utility B205" .
+inst:room_1xS3BCk291UvhgP2dvNdjS
+props:dimensionsArea "1.73"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNdjS
+props:dimensionsVolume "3.61"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNb9h
+props:identityDataNumber "A105" .
+inst:room_1xS3BCk291UvhgP2dvNb9h
+props:identityDataName "Stair A105" .
+inst:room_1xS3BCk291UvhgP2dvNb9h
+props:dimensionsArea "4.92"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNb9h
+props:dimensionsVolume "20.8"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNbEa
+props:identityDataNumber "B105" .
+inst:room_1xS3BCk291UvhgP2dvNbEa
+props:identityDataName "Room B105" .
+inst:room_1xS3BCk291UvhgP2dvNbEa
+props:dimensionsArea "4.92"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNbEa
+props:dimensionsVolume "20.8"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNbq0
+props:identityDataNumber "R301" .
+inst:room_1xS3BCk291UvhgP2dvNbq0
+props:identityDataName "Roof R301" .
+inst:room_1xS3BCk291UvhgP2dvNbq0
+props:dimensionsArea "145.72"^^xsd:decimal .
+inst:room_1xS3BCk291UvhgP2dvNbq0
+props:dimensionsVolume "405.45"^^xsd:decimal .

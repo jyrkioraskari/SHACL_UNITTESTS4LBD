@@ -1,0 +1,27 @@
+30-04-2021 20:33:30 ERROR riot:106 - [line: 9, col: 1 ] Undefined prefix: 
+30-04-2021 20:37:48 ERROR riot:106 - [line: 9, col: 1 ] Undefined prefix: 
+30-04-2021 20:39:13 ERROR riot:106 - [line: 9, col: 1 ] Undefined prefix: 
+30-04-2021 20:40:04 ERROR riot:106 - [line: 9, col: 1 ] Undefined prefix: 
+30-04-2021 20:42:40 ERROR riot:106 - [line: 9, col: 1 ] Undefined prefix: 
+30-04-2021 20:45:59 ERROR riot:106 - [line: 15, col: 24] Triples not terminated properly in []-list
+30-04-2021 20:48:55 ERROR riot:106 - [line: 15, col: 24] Triples not terminated properly in []-list
+30-04-2021 21:00:38 ERROR riot:106 - [line: 10, col: 18] Undefined prefix: bot
+30-04-2021 21:11:50 ERROR riot:106 - [line: 11, col: 7 ] Undefined prefix: owl
+30-04-2021 21:46:10 ERROR riot:106 - [line: 19, col: 1 ] Undefined prefix: inst
+30-04-2021 21:56:38 ERROR riot:106 - [line: 24, col: 18] Undefined prefix: ifc
+30-04-2021 22:36:08 ERROR riot:106 - [line: 38, col: 3 ] Out of place: [KEYWORD:Ifc]
+30-04-2021 22:37:18 ERROR riot:106 - [line: 38, col: 3 ] Out of place: [KEYWORD:Ifc]
+30-04-2021 22:37:43 ERROR riot:106 - [line: 38, col: 3 ] Out of place: [KEYWORD:Ifc]
+30-04-2021 22:38:05 ERROR riot:106 - [line: 38, col: 3 ] Out of place: [KEYWORD:Ifc]
+30-04-2021 22:41:01 ERROR riot:106 - [line: 11, col: 22] Undefined prefix: h
+30-04-2021 22:41:07 ERROR riot:106 - [line: 11, col: 22] Undefined prefix: h
+30-04-2021 22:41:45 ERROR riot:106 - [line: 11, col: 85] Undefined prefix: xsd
+30-04-2021 22:44:33 ERROR riot:106 - [line: 13, col: 1 ] Broken token (newline): http://lbd.arch.rwth-aachen.de/props# ;
+30-04-2021 22:57:20 ERROR riot:106 - [line: 26, col: 18] Undefined prefix: ifc
+30-04-2021 23:49:14 ERROR riot:106 - [line: 26, col: 30] Triples not terminated by DOT
+02-05-2021 16:13:16 ERROR riot:106 - [line: 24, col: 16] Not a valid token for an RDF term: [LBRACKET]
+05-05-2021 00:49:09 ERROR riot:106 - [line: 34, col: 1 ] Undefined prefix: ex
+05-05-2021 00:49:59 ERROR riot:106 - [line: 36, col: 20] Undefined prefix: ex
+05-05-2021 00:50:33 ERROR riot:106 - [line: 36, col: 20] Undefined prefix: bot
+05-05-2021 00:56:12 ERROR riot:106 - [line: 37, col: 20] Undefined prefix: bea
+05-05-2021 11:38:46 ERROR riot:106 - [line: 8, col: 1 ] Broken token (newline): v 417 -417 3100

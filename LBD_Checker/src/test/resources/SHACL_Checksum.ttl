@@ -1,0 +1,52 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix inst:  <https://dot.dc.rwth-aachen.de/ldb#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifc:   <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL#> .
+
+inst:prefixes
+    a owl:Ontology ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL#"^^xsd:anyURI ;
+        sh:prefix "ifc" ;
+    ] ; 
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://w3id.org/express#"^^xsd:anyURI ;
+        sh:prefix "express" ;
+    ] ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "http://lbd.arch.rwth-aachen.de/props#"^^xsd:anyURI ; 
+        sh:prefix "props" ;
+    ]    ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://w3id.org/bot#"^^xsd:anyURI ; 
+        sh:prefix "bot" ;
+    ]    .
+
+inst:shapeBOTRelations a sh:NodeShape ;
+  sh:targetNode <https://ldc.de/stairflight_ca457005-aa0d-4679-92c1-5067d702c9f3>;
+    sh:property [
+    sh:sparql [
+      a sh:SPARQLConstraint ;
+      sh:message "The checksum of the properties not valid." ;
+      sh:prefixes inst:prefixes;
+      sh:select """
+      SELECT $this ?ResultSetHash WHERE{
+       {
+          SELECT $this (MD5(GROUP_CONCAT(CONCAT(STR(?p)); separator=' ')) as ?ResultSetHash ) WHERE{
+	      SELECT * WHERE {
+		     $this ?p ?o.
+	      } ORDER BY ?s ?p ?o
+         } GROUP BY $this      
+       }
+       FILTER (?ResultSetHash != "82c7dc90fcb57319f2bb7ead58ead1de")
+      }
+      """
+     ]
+ 
+  ] .
+  

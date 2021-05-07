@@ -1,0 +1,63 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix inst:  <https://dot.dc.rwth-aachen.de/ldb#> .
+@prefix bot:   <https://w3id.org/bot#> .
+@prefix beo:   <https://pi.pauwel.be/voc/buildingelement#> .
+
+
+inst:prefixes
+    a owl:Ontology ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://standards.buildingsmart.org/IFC/DEV/IFC2x3/TC1/OWL#"^^xsd:anyURI ;
+        sh:prefix "ifc" ;
+    ] ; 
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://w3id.org/express#"^^xsd:anyURI ;
+        sh:prefix "express" ;
+    ] ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "http://lbd.arch.rwth-aachen.de/props#"^^xsd:anyURI ; 
+        sh:prefix "props" ;
+    ]    ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://w3id.org/bot#"^^xsd:anyURI ; 
+        sh:prefix "bot" ;
+    ]    ;
+    sh:declare [
+        a sh:PrefixDeclaration ;
+        sh:namespace "https://pi.pauwel.be/voc/buildingelement#"^^xsd:anyURI ; 
+        sh:prefix "beo" ;
+    ]    .
+
+
+inst:HasGeometry  
+        sh:path bot:hasSimple3DModel ;
+	    sh:minCount 1 .
+
+inst:RuleFilterWindowsWithGeometryShape
+    a sh:NodeShape ;
+    sh:targetClass bot:Element ;
+    sh:property inst:HasGeometry ;
+    sh:rule [
+        a sh:SPARQLRule;
+        rdfs:label "Construct a Geometry MVD";
+        sh:prefixes inst:prefixes ;
+        sh:construct """
+            CONSTRUCT {
+                $this ?p ?o .
+            }
+            WHERE {
+                $this ?p ?o .
+                FILTER (regex (STR($this),"window_")).
+            }
+            """
+    ] .
+

@@ -1,0 +1,165 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix vann:     <http://purl.org/vocab/vann/> .
+@prefix voaf:     <http://purl.org/vocommons/voaf#> .
+@prefix vs:       <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dce:      <http://purl.org/dc/elements/1.1/> .
+@prefix dbo:      <http://dbpedia.org/ontology/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <https://schema.org/> .
+
+@prefix bot: <https://w3id.org/bot#> .
+
+bot:Zone a owl:Class ;
+  owl:disjointWith
+    bot:Element ,
+    bot:Interface .
+
+  bot:Site a owl:Class ;
+    rdfs:subClassOf bot:Zone ;
+    owl:disjointWith
+      bot:Building ,
+      bot:Storey ,
+      bot:Space .
+	  
+  bot:Building a owl:Class ;
+    rdfs:subClassOf bot:Zone ;
+    owl:disjointWith
+      bot:Site ,
+      bot:Storey ,
+      bot:Space .
+
+  bot:Storey a owl:Class ;
+    rdfs:subClassOf bot:Zone ;
+    owl:disjointWith
+      bot:Site ,
+      bot:Building ,
+      bot:Space .
+
+  bot:Space a owl:Class ;
+    rdfs:subClassOf bot:Zone ;
+      owl:disjointWith
+        bot:Site ,
+        bot:Building ,
+        bot:Storey .
+
+bot:adjacentZone a owl:ObjectProperty , owl:SymmetricProperty ;
+  rdfs:domain bot:Zone ;
+  rdfs:range bot:Zone ;
+  schema:domainIncludes
+    bot:Site , 
+    bot:Building ,
+    bot:Storey ,
+    bot:Space ;
+  schema:rangeIncludes
+    bot:Site , 
+    bot:Building ,
+    bot:Storey ,
+    bot:Space ;
+  owl:propertyDisjointWith
+    bot:intersectsZone .
+
+bot:intersectsZone a owl:ObjectProperty , owl:SymmetricProperty ;
+  rdfs:domain bot:Zone ;
+  rdfs:range bot:Zone ;
+  schema:domainIncludes
+    bot:Site , 
+    bot:Building ,
+    bot:Storey ,
+    bot:Space ;
+  schema:rangeIncludes
+    bot:Site , 
+    bot:Building ,
+    bot:Storey ,
+    bot:Space ;
+  owl:propertyDisjointWith
+    bot:adjacentZone .
+
+bot:containsZone a owl:ObjectProperty , owl:TransitiveProperty ;
+  rdfs:domain bot:Zone ;
+  rdfs:range bot:Zone ;
+  schema:domainIncludes
+    bot:Site , 
+    bot:Building ,
+    bot:Storey ,
+    bot:Space ;
+  schema:rangeIncludes
+    bot:Site , 
+    bot:Building ,
+    bot:Storey ,
+    bot:Space .
+
+  bot:hasBuilding a owl:ObjectProperty ;
+    rdfs:subPropertyOf bot:containsZone ;
+    rdfs:domain bot:Zone ;
+    schema:domainIncludes bot:Site ;
+    rdfs:range bot:Building .
+
+  bot:hasStorey a owl:ObjectProperty ;
+    rdfs:subPropertyOf bot:containsZone ;
+    rdfs:domain bot:Zone ;
+    schema:domainIncludes bot:Building ;
+    rdfs:range bot:Storey .
+   
+  bot:hasSpace a owl:ObjectProperty ;
+    rdfs:subPropertyOf bot:containsZone ;
+    rdfs:domain bot:Zone ;
+    schema:domainIncludes bot:Storey ;
+    rdfs:range bot:Space .
+   
+## Elements
+
+bot:Element a owl:Class ;
+  owl:disjointWith bot:Zone , bot:Interface . 
+    
+bot:hasSubElement a owl:ObjectProperty ;
+  rdfs:domain bot:Element ;
+  rdfs:range bot:Element .
+ 
+bot:hasElement a owl:ObjectProperty ;
+  rdfs:domain bot:Zone ;
+  rdfs:range bot:Element ;
+  owl:propertyChainAxiom ( bot:containsZone bot:hasElement ) .
+
+  bot:adjacentElement a owl:ObjectProperty ;
+    rdfs:subPropertyOf bot:hasElement ;
+    owl:propertyDisjointWith
+      bot:intersectingElement .
+    
+  bot:containsElement a owl:ObjectProperty ;
+    rdfs:subPropertyOf bot:hasElement ;
+    owl:propertyChainAxiom  ( bot:containsZone bot:containsElement ) .
+
+  bot:intersectingElement a owl:ObjectProperty ;
+    rdfs:subPropertyOf bot:hasElement ;
+    owl:propertyDisjointWith
+      bot:adjacentElement .
+
+## Interfaces
+
+bot:Interface a owl:Class ;
+  owl:disjointWith bot:Zone, bot:Element .
+
+bot:interfaceOf a owl:ObjectProperty ;
+  rdfs:domain bot:Interface .
+
+
+## 3DModel
+
+bot:hasZeroPoint a owl:ObjectProperty ;
+  rdfs:domain bot:Site .
+
+bot:hasSimple3DModel a owl:DatatypeProperty ;
+  schema:domainIncludes
+    bot:Element,
+    bot:Zone .
+
+bot:has3DModel a owl:ObjectProperty ;
+  schema:domainIncludes
+    bot:Element,
+    bot:Zone .
+
+

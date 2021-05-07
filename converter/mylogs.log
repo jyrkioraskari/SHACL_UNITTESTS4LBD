@@ -1,0 +1,36 @@
+01-09-2020 16:59:06 ERROR riot:84 - [line: 42, col: 33] Unrecognized: [DOT]
+01-09-2020 17:03:54 ERROR riot:84 - [line: 42, col: 33] Unrecognized: [DOT]
+01-09-2020 17:08:53 ERROR riot:84 - [line: 42, col: 33] Unrecognized: [DOT]
+01-09-2020 17:10:15 ERROR riot:84 - [line: 42, col: 33] Unrecognized: [DOT]
+01-09-2020 17:14:14 ERROR riot:84 - [line: 42, col: 33] Unrecognized: [DOT]
+01-09-2020 18:33:58 ERROR riot:84 - [line: 15, col: 21] Expected IRI for predicate: got: [STRING2:Autodesk Revit Architecture 2011]
+01-09-2020 18:37:35 ERROR riot:84 - [line: 19, col: 21] Expected IRI for predicate: got: [STRING2:Autodesk Revit Architecture 2011]
+01-09-2020 19:08:47 ERROR riot:84 - [line: 16, col: 32] Triples not terminated by DOT
+01-09-2020 19:08:54 ERROR riot:84 - [line: 16, col: 32] Triples not terminated by DOT
+01-09-2020 19:09:00 ERROR riot:84 - [line: 16, col: 32] Triples not terminated by DOT
+01-09-2020 19:09:04 ERROR riot:84 - [line: 16, col: 32] Triples not terminated by DOT
+01-09-2020 19:09:09 ERROR riot:84 - [line: 16, col: 32] Triples not terminated by DOT
+01-09-2020 19:09:13 ERROR riot:84 - [line: 16, col: 32] Triples not terminated by DOT
+01-09-2020 19:15:06 ERROR riot:84 - [line: 16, col: 32] Triples not terminated by DOT
+22-10-2020 12:23:10 ERROR RDFWriter:1016 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#_32935
+18-12-2020 16:48:14 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:48:28 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:48:40 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:48:52 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:49:03 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:49:16 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:49:31 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:49:45 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:49:57 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:50:11 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:50:24 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:50:38 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:50:43 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:52:17 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcDirection_1048592
+18-12-2020 16:52:31 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:52:45 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcFaceOuterBound_65537
+18-12-2020 16:52:58 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:53:10 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 16:56:46 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 17:07:33 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
+18-12-2020 17:11:32 ERROR RDFWriter:1032 - *ERROR 2*: getResource failed for https://dot.dc.rwth-aachen.de/IFCtoLBDset#IfcOrganization_1
